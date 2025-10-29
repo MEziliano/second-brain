@@ -1,3 +1,0 @@
-### ADK labs
-
-Some content...
