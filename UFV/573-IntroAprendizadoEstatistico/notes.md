@@ -23,7 +23,9 @@ Já a estatística inferencial utiliza de conjuntos de técnicas que possibilita
 
 Também conhecido como *medidas de tendência central*, são medidas que ajudam a compreender um ponto em comum a todos os dados. Geralmente, um ponto central, por isso o nome medidas de tendência central. **Exemplo**: *Média aritmética,* média ponderada, mediana, moda… <br>
 <center>
-$\bar{X} = \dfrac{X_1 + X_2 + ... + X_n}{n} = \dfrac{\sum^n_i X_i}{n}$ 
+
+$\bar{X} =\dfrac{X_1 + X_2 + ... + X_n}{n}=\dfrac{\sum^n_i X_i}{n}$ 
+
 </center>
 
 ### Medidas de Disperção
