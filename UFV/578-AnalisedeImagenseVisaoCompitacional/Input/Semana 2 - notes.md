@@ -1,0 +1,1 @@
+# Semana 02 - Processamento de Imagens
