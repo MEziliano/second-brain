@@ -23,12 +23,12 @@ Relacione as definições da tabela com os termos correspondentes.
 
 * Refere-se à quantidade total de pixels ou pontos que compõem uma imagem digital. Ela é medida em pixels (largura x altura), como, por exemplo, 1920x1080 (Full HD) ou 3840x2160 (4K) em vídeos. Quanto maior for essa característica, maior será a quantidade de detalhes que a imagem pode conter juntamente a uma melhor qualidade de imagem.
 
-**[RESPOSTA]** RESOLUÇÃO ESPACIAL
+**[RESPOSTA]** RESOLUÇÃO ESPACIAL <br>
 **[CORREÇÃO]** RESOLUÇÃO DE IMAGEM ❗
 
 * Este se refere à capacidade de uma imagem ou dispositivo de captura de imagens para representar detalhes finos e distinguir entre objetos separados. Ela é frequentemente medida em pixels por polegada em imagens digitais. Esta característica define o quão detalhada será a imagem. Está relacionada também à nitidez e à capacidade de representar linhas finas e detalhes em uma imagem.
 
-**[RESPOSTA]** RESOLUÇÃO DE IMAGEM
+**[RESPOSTA]** RESOLUÇÃO DE IMAGEM <br>
 **[CORREÇÃO]** RESOLUÇÃO ESPACIAL ❗
 
 ### 03

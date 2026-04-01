@@ -1,13 +1,12 @@
-#Semana 01 - Introdução a Estatística Univariada e Multivariada 1- notes.md
-
-
 # Semana I - Intrdução a Estatística Univariada e Multivariada
+
+
  O conteúdo temático reúne alguns conceitos importantes para melhor entender os aspectos teóricos da metodologias estatísticas utilizadas na solução de problemas de **classificação, predição e reconhecimento de padrões**. Nesse semana, você deverá ler o material e escutar as aulas. 
 
 Nesta semana, além da apostila da disciplina o aluno pode consultar o roteiro de aulas de Iniciação à Estatística disponível no link abaixo. Esse material é parte da disciplina EST 105 da Universidade Federal de Viçosa a qual sou professor a 15 anos. Especificamente, a consulta deve ser ao Capítulo 2 que aborda Estatística Descritiva. Nesse material, além das medidas apresentadas nos slides são encontradas outras medidas de posição e dispersão. É importante ressaltar que para o entendimento das metodologias multivariadas de aprendizado estatístico o pesquisador deve entender os conceitos de média, variância, covariância e correlação.
 
 ----
-**Introdução** 
+#### **Introdução** 
 
 O que é ciência estatística? É um ramo da matemática que se debruça sobre os dados. Buscando a *coleta, a organização, apresentação, análise e interpretação*  de forma que auxilie na tomada de decições. 
 Um dos principais conceitos estatísticos é a diferencição entre **População e Amostra**.
@@ -16,15 +15,15 @@ Um dos principais conceitos estatísticos é a diferencição entre **Populaçã
 
 Dentro da estatística existe uma divisão entre dois principais focos, sendo elas: a estatística descritiva e a estatística inferencial. 
 
-A estatística descritiva visa a resumir os dados obtidos após a amostragem. Utiliza de medidas descritivas. Essas conclusões são válidas apenas para a amostra de dados que estão sendo estudadas.   
+A **estatística descritiva** visa a resumir os dados obtidos após a amostragem. Utiliza de medidas descritivas. Essas conclusões são válidas apenas para a amostra de dados que estão sendo estudadas.   
 
-Já a estatística inferencial utiliza de conjuntos de técnicas que possibilitam extrapolar os resultados obtidos em um subconjunto de dados (**amostra representativa**)para um conjunto maior (**população**).  
+Já a **estatística inferencial** utiliza de conjuntos de técnicas que possibilitam extrapolar os resultados obtidos em um subconjunto de dados (**amostra representativa**)para um conjunto maior (**população**).  
 
 ## **Estatística descritiva univariada**
 
 ### Medidas de Posição
 
-Também conhecido como *medidas de tendência central*, são medidas que ajudam a compreender um ponto em comum a todos os dados. Geralmente, um ponto central, por isso o nome medidas de tendência central. **Exemplo**: *Média aritmética,* média ponderada, mediana, moda… <br>
+Também conhecido como *medidas de tendência central*, são medidas que ajudam a compreender um ponto em comum a todos os dados. Geralmente, um ponto central, por isso o nome medidas de tendência central. **Exemplo**: **<u>Média aritmética</u>**, **<u>média ponderada</u>**, **<u>mediana</u>**, **<u>moda</u>**… <br>
 <center>
 
 $\bar{X} =\dfrac{X_1 + X_2 + ... + X_n}{n}=\dfrac{\sum^n_i X_i}{n}$ 
