@@ -1,11 +1,19 @@
 # Semana 02 - Processamento de Imagens
 
-# Semana 02 - Processamento de Imagens
 
+
+* **AULA 4**: Realce
+* **AULA 5**: Filtros
+* **AULA 6**: Transformação Geométrica, Morfológica e Métricas de Qualidade de Imagem
+* **Aula Prática 2**: Técnicas de Realce
+* **Desafio 2**: Equalização em imagens RGB
+* **Aula Prática 3**: Técnicas de Filtragem
+* **Desafio 3**: Filtros passa-alta e passa baixa RGB
+* **Aula Prática 4**:Transformação Geométrica, Morfológica e Métricas de Qualidade de Imagem
+* **Desafio 4**: Detecção automática de pontos
+* **AVALIAÇÃO ONLINE 2**
 ---
-
 ### Aula 04 - Realce
-<<<<<<< HEAD
 
 - Vídeo
     
@@ -13,17 +21,6 @@
     
 
 - Processamento de Imagens: Realces
-=======
-<details>
-<summary>Video</summary>
-
-[Aula 04 - Realce](https://www.youtube.com/watch?v=M6e6Btxd0qk)
-    
-</details>
-
-**Processamento de Imagens: Realces**
-
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
 - Definição do processamento de imagens, domínio espacial e da frequência
 - Filtros (Correlação Cruzada e Convolução), Filtros (suavização e Agudização)
 - Transformação Geométrica e Morfológica
@@ -31,10 +28,6 @@
 
 **Processamento** é toda a modificação feita nos valores de pixel da imagem para determinado fim.  Empregando técnicas como: realce, filtragem, compressão (diminuir recursos computacionais) e detecção de bordas. 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
 **Domínio Espacial** 
 
 - Operando sobre os pixels $(x,y)$, sendo ponto a ponto, por meio de operações matemáticas ou por filtros.
@@ -61,57 +54,19 @@ $$
 
 **Realce** obter uma imagem processada para uma aplicação específica, sem regra específica para isso. Sendo o método altamente dependente do problema. Compensando as imperfeições dos sistemas de aquisição e reprodução de imagens.   
 
-<<<<<<< HEAD
 <aside>
 💡
 
 </aside>
-=======
-<details>
-<summary>
-<h3>Resumo</h3>
-</summary>
-
-* 📚 Introdução da quarta aula do curso, focada na técnica de realce e processamento de imagens e visão computacional.
-* 🗺️ Exploração de conceitos como domínio espacial, domínio da frequência, filtros de suavização, correlação cruzada e convolução.
-* 🖼️ Definição de processamento como qualquer modificação nos valores dos pixels para atingir um objetivo específico.
-* 🎯 O foco principal do processamento é melhorar a informação desejada, e não necessariamente tornar a imagem mais bonita visualmente.
-* 📉 Uso da compressão para reduzir o tamanho de armazenamento e o consumo de recursos computacionais.
-* ✂️ Importância da detecção de bordas para isolar objetos de interesse e reduzir a quantidade de dados a serem manipulados.
-* 🔢 Diferenciação entre o domínio espacial (valores diretos dos pixels) e o domínio da frequência (uso da Transformada de Fourier).
-* ➗ Tratamento da imagem como uma matriz, permitindo a aplicação de diversas operações matemáticas ponto a ponto.
-* 〰️ Identificação de áreas de baixa frequência (pouca mudança nos pixels) e alta frequência (bordas e ruídos).
-* 🛠️ O realce de imagem é definido como um método altamente dependente do problema específico que se deseja resolver.
-* 📷 O objetivo do realce no domínio espacial é compensar imperfeições nos sistemas de captura e reprodução de imagens.
-* 🔄 O negativo da imagem inverte os tons de cinza, transformando áreas escuras em claras e vice-versa, sendo um tipo básico de realce.
-* 🌑 A transformação logarítmica é ideal para destacar detalhes em regiões escuras, aumentando sua faixa dinâmica.
-* ☀️ A transformação exponencial é recomendada para imagens superexpostas, pois expande a faixa dinâmica das áreas claras.
-* 🔳 A limiarização transforma a imagem em binária (preto e branco) para facilitar a segmentação e isolamento de objetos.
-* 📊 O histograma representa a distribuição estatística do percentual de pixels para cada valor de intensidade (0 a 255 no Open CV).
-* ⚖️ A equalização de histograma redistribui os tons de cinza para tornar a imagem mais uniforme e melhorar o contraste.
-* 🌈 Embora comum em tons de cinza, a equalização também pode ser aplicada em cada banda do espaço de cor RGB.
-* 📏 O filtro de alta escala é usado após o processamento para garantir que os valores dos pixels voltem ao intervalo padrão de 0 a 255.
-
-</details>
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
 
 ---
 
 ## Aula 5  -  Filtros
-<<<<<<< HEAD
 
 - Vídeo
     
     https://youtu.be/XblyzmymVcw
     
-=======
-<details>
-<summary>Video</summary>
-    
-[AULA 05 - FILTROS](https://youtu.be/XblyzmymVcw)
-    
-</details>
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
 
 Um filtro nada mais é do que um tipo de processamento por máscara, ou como também é conhecido, kernel. A modificação do valor do pixel com base nos valores de seu vizinho e em uma máscara. Aplicação exige ancorar um pixel para a aplicação da máscara, normalmente sendo o pixel central. 
 
@@ -157,59 +112,20 @@ Uma imagem pode ser vista de duas maneiras: no domínio espacial (como uma grade
 - Realçar bordas e ruídos (DE)
 - Atenuam ou eliminam na baixa frequência (domínio da frequência - filtro passa alta)
 
-<<<<<<< HEAD
 <aside>
 💡
 
 </aside>
-=======
-<details><summary><h3>Resumo</h3></summary>
-
-* 🎭 O filtro é um processamento por máscara (ou Kernel) que modifica o valor de um pixel com base em seus vizinhos.
-* ⚓ O processo exige "ancorar" a máscara em um pixel, geralmente o central, para realizar o cálculo matemático sobre a imagem.
-* 🔢 A imagem é tratada como uma matriz onde cada elemento representa a intensidade do brilho (0 a 255 no Open CV).
-* ✖️ A filtragem básica consiste em multiplicar os valores dos pixels da imagem pelos valores correspondentes no Kernel.
-* 🔄 A principal diferença entre correlação e convolução é que, na convolução, o Kernel é "flipado" (rotacionado em 180°).
-* 🧩 A correlação cruzada mede a similaridade entre o Kernel e a região da imagem, sendo ideal para reconhecimento de padrões.
-* 🖼️ Filtros de convolução são amplamente aplicados em suavização, realce de características e detecção de bordas.
-* 🧠 O conceito de convolução apresentado é o mesmo fundamento utilizado nas Redes Neurais Convolucionais (CNNs).
-
-* 🌊 A Transformada de Fourier é uma ferramenta matemática que permite analisar imagens e sinais através de suas frequências.
-* 📉 O processo divide os componentes da imagem em baixas frequências (áreas homogêneas) e altas frequências (mudanças abruptas).
-* 🐕 Bordas de objetos e contornos são considerados regiões de alta frequência devido à variação rápida nos valores dos pixels.
-* 🌨️ Ruídos na imagem, como "chuviscos" brancos em um fundo preto, também são identificados como componentes de alta frequência.
-* 🔢 No processamento de imagens digitais, utiliza-se a Transformada Discreta de Fourier devido à natureza finita dos pixels (0 a 255).
-* 🔄 É possível transformar uma imagem para o domínio da frequência, realizar operações e depois usar a Transformada Inversa para voltar ao domínio espacial.
-* ⚖️ O uso do filtro de alta escala é obrigatório ao retornar ao domínio espacial para garantir que os valores dos pixels fiquem no intervalo de 0 a 255.
-* 🔍 A análise no domínio frequencial é uma técnica poderosa para identificar padrões complexos e texturas que não são óbvios no domínio comum.
-
-* 🔪 Uso de filtros especializados como Sobel e o operador Canny para a detecção precisa de bordas de objetos.
-* 💾 Aplicação da Transformada de Fourier na compressão de dados, sendo uma técnica fundamental para o formato de imagem JPEG.
-* 🌫️ O processo de suavização causa o borramento da imagem com o objetivo principal de remover ruídos indesejados.
-* 📉 Filtros Passa-Baixa permitem a permanência de frequências baixas enquanto suprimem as altas (bordas e ruídos).
-* ⚡ A agudização é o oposto da suavização, focando no realce de bordas e detalhes finos da imagem.
-* 📈 Filtros Passa-Alta são utilizados no domínio da frequência para atenuar componentes de baixa frequência e destacar contornos.
-</details>
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
 
 ---
 
 ## Aula 6 - Transformação Geométrica e Morfológica - Métricas de Qualidade de Imagem
 
-<<<<<<< HEAD
 - Vídeo
     
     https://youtu.be/QuWrhKA5hws
     
 
-=======
-<details>
-<summary>Video</summary>
-    
-[AULA 06 - TRANSFORMAÇÃO GEOMÉTRICA E MORFOLÓGICA - MÉTRICAS DE QUALIDADE DE IMAGEM](https://youtu.be/QuWrhKA5hws)
-    
-</details>
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
 Transformações geométricas são aquelas feitas para alterar sua forma, tamanho, orientação ou posição sem alterar a essência ou o próprio conteúdo visual. Dentre esse tipo de transformação se destaca dois tipos
 
 - Linear
@@ -232,27 +148,4 @@ Transformações Morfológicas são feita a partir de uma operação simples bas
 
 Como saber a qualidade do processamento?
 
-<<<<<<< HEAD
 ![image.png](attachment:efa51895-272c-41f5-8a64-48f06bad118d:image.png)
-=======
-<details><summary>Resumo</summary>
-
-* 📐 As transformações geométricas alteram forma, tamanho e orientação da imagem sem mudar seu conteúdo visual básico.
-* 🔄 Operações comuns incluem translação, rotação, escalonamento, "flip" (inversão de eixos) e projeção de perspectiva.
-* 🎥 A transformação de perspectiva mapeia pontos entre planos bidimensionais e superfícies tridimensionais (reconstrução 3D).
-* 📍 No OpenCV com Python, a leitura de coordenadas segue o padrão de colunas (x) e linhas (y) para mapeamento de pontos.
-* 🔢 Para aplicar uma transformação de perspectiva, é necessário fornecer dois conjuntos de pontos: os da imagem original e os da saída desejada.
-* 🌑 Transformações morfológicas são operações simples baseadas na forma, geralmente aplicadas em imagens binárias (preto e branco).
-* 🧪 Essas operações utilizam a imagem original e um Kernel para definir se a ação será de erosão, dilatação, abertura ou fechamento.
-* 🤏 A erosão tem como objetivo "afinar" objetos, sendo útil para remover ruídos brancos ou separar objetos que ficaram conectados indevidamente.   
-
-* ➕ A dilatação funciona como o inverso da erosão, sendo útil para unir partes separadas ou preencher falhas em um objeto.
-* 🧼 A "abertura" é a combinação de erosão seguida de dilatação, técnica eficaz para remover ruídos sem alterar o tamanho final do objeto.
-* 🕳️ O "fechamento" consiste em aplicar a dilatação e depois a erosão, ideal para fechar pequenos buracos internos em objetos de primeiro plano.
-* ➰ O gradiente morfológico é uma operação que destaca o contorno do objeto, auxiliando em tarefas futuras de segmentação.
-* 📏 A qualidade do processamento é medida comparando uma imagem gerada ($g$) com uma imagem modelo ou ideal ($f$).
-* 🔢 Métricas como Erro Máximo e Erro Médio Absoluto quantificam a diferença entre os pixels da imagem processada e da original.
-* 📉 O Erro Quadrático Médio (MSE) e sua raiz (RMSE) são ferramentas estatísticas fundamentais para validar a precisão do processamento.
-* ✍️ O encerramento do módulo destaca a importância das métricas para avaliação online e a prática em laboratórios síncronos.
-</details>
->>>>>>> 16fdaba (add: ELT578 - Visão Computacional)
