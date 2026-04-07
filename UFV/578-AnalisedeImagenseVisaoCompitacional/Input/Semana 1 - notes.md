@@ -8,9 +8,9 @@
 * **AVALIAÇÃO ONLINE 1**
 -----
   
-### Aulas Teóricas 
 
-#### 01 - Introdução à Dados de  Imagens
+
+## 01 - Introdução à Dados de  Imagens
 
 [VIDEO AULA - 01](https://www.youtube.com/watch?v=BSR2ZcZQJH4)
 
@@ -19,34 +19,55 @@
  * 🎓 Introdução à disciplina de Análise de Imagens e Visão Computacional, focando inicialmente na compreensão de conceitos e terminologias básicas da área. <br>
 * 🖼️ Definição de imagem no contexto computacional, exemplificada em três categorias: **colorida (três canais)**, **tons de cinza (intensidades variadas)** e **preto e branco (binária)**.<br>
 * 🎨 Imagens coloridas são compostas por três canais de cores (Vermelho, Verde e Azul - RGB), cuja combinação forma a diversidade de cores percebida pelo olho humano. <br>
-* 🔢 O computador "enxerga" a imagem como uma matriz, onde cada célula possui um valor numérico de intensidade (ex: em imagens preto e branco, 0 representa a cor preta/ausência e 1 representa o branco). <br>
+* 🔢 **O computador "enxerga" a imagem como uma matriz**, onde cada célula possui um valor numérico de intensidade (ex: em imagens preto e branco, 0 representa a cor preta/ausência e 1 representa o branco). <br>
 * 🌈 Porém, as imagens não se limitam à faixa do visível (400nm a 700nm), podendo ser formadas por outros comprimentos de onda, como o infravermelho (próximo, intermediário e distante). <br>
 * 🌱 O uso do infravermelho é essencial na agronomia para calcular o NDVI (índice de vegetação), que ajuda a monitorar se as plantas estão saudáveis, doentes ou sofrendo estresse hídrico.
 
+| 🗂  **Palavras-Chaves**  | 📝 **Anotações** |
+|-------------------------|------------------|
+| • **Ondas visíveis** | Para falarmos sobre imagens é importante ressaltar que estamos falando apenas daquilo que é *visível para o olho humano*; De acordo com a física, a imagem é propagada atráves de uma **onda** até o olho humano. E o conceito de onda é importante, pois isso define o que será a cor, pois cada cor tem um comprimento de odna diferente.  |
+| • **Cor**  |   E para a ciência da computacão a representação gráfica de cada imagem é dada através de uma **matriz** |
+| •  |  |
 
-### Aula 02 - Visão Computacional no dia-a-dia
+<h3>📌 Resumo </h3>
+
+> Ao falarmos sobre imagens, principalmente das representadas no computador, estamos falando de matrizes. Não se limitando apenas as ondas visíveis ao olho humano, através de sensores, sendo capazes de capturar informações sobre outros comprimentos de ondas. 
+
+--- 
+## Aula 02 - Visão Computacional no dia-a-dia
 
 [VIDEO AULA 02](https://www.youtube.com/watch?v=AzsjiYbuECc)
 
-* O Objetivo da Visão Computacional é o desenvolvimento de algoritmos que possam processar, analisar e interpretar imagens digitais ou sequências de vídeo. Ao realziar a extração de informações relevantes de dados visuais, os sistemas de visao computacional podem tomar decisões, reconhecer objetos ou padrões e entender o conteúdo de imagens ou vídeos.  <br>
-* 📱 Uso Cotidiano: Aplicação comum em autenticação biométrica de celulares, incluindo reconhecimento de impressão digital, facial e de retina. <br>
-* 👥 Redes Sociais: Utilização de reconhecimento facial para sugestão e marcação automática de pessoas em fotos com base em bancos de dados. <br>
-* 🚗 Setor Automotivo: Emprego na detecção de objetos para veículos autônomos e sistemas de assistência à direção (sensores de faixa e tráfego lateral). <br>
-* 👷 Segurança do Trabalho: Uso em sistemas de vigilância para verificar conformidade, como a detecção automática do uso de EPIs (ex: capacetes). <br>
-* 🏭 Controle de Qualidade: Aplicação na indústria para inspeção e remoção de objetos indesejados ou defeituosos em linhas de produção (ex: pedras em meio a frutas). <br>
-* 🏥 Medicina: Auxílio vital no diagnóstico de doenças (como detecção de nódulos e problemas cardíacos) e suporte em cirurgias via realidade aumentada. <br>
+* **O Objetivo da Visão Computacional é o desenvolvimento de algoritmos que possam processar, analisar e interpretar imagens digitais ou sequências de vídeo**. Ao realziar a extração de informações relevantes de dados visuais, **os sistemas de visao computacional podem tomar decisões**, **reconhecer objetos** ou **padrões** e **entender o conteúdo de imagens ou vídeos**.  <br>
+* 📱 **Uso Cotidiano**: Aplicação comum em autenticação biométrica de celulares, incluindo reconhecimento de impressão digital, facial e de retina. <br>
+* 👥 **Redes Sociais**: Utilização de reconhecimento facial para sugestão e marcação automática de pessoas em fotos com base em bancos de dados. <br>
+* 🚗 **Setor Automotivo**: Emprego na detecção de objetos para veículos autônomos e sistemas de assistência à direção (sensores de faixa e tráfego lateral). <br>
+* 👷 **Segurança do Trabalho**: Uso em sistemas de vigilância para verificar conformidade, como a detecção automática do uso de EPIs (ex: capacetes). <br>
+* 🏭 **Controle de Qualidade**: Aplicação na indústria para inspeção e remoção de objetos indesejados ou defeituosos em linhas de produção (ex: pedras em meio a frutas). <br>
+* 🏥 **Medicina**: Auxílio vital no diagnóstico de doenças (como detecção de nódulos e problemas cardíacos) e suporte em cirurgias via realidade aumentada. <br>
+* 👓 **Realidade Aumentada (RA)**: Tecnologia que sobrepõe elementos digitais ao mundo real, tendo sido popularizada por jogos como Pokémon GO e hoje aplicada em soluções comerciais. <br>
+* 💄 **Consultoria Virtual**: Marcas de cosméticos utilizam IA e câmeras de celulares para analisar a pele do cliente (rugas, olheiras) e recomendar produtos personalizados sem necessidade de testes físicos.<br>
+* 🛒 **Caixas de Autoatendimento**: Supermercados combinam sensores de peso e câmeras de visão computacional sobre os caixas para registrar produtos corretamente e monitorar possíveis erros ou furtos.<br>
+* 🔞 **Conformidade Regulatória**: O sistema visual consegue identificar categorias de produtos, como bebidas alcoólicas, e bloquear a venda automaticamente caso esteja fora do horário permitido por lei.<br>
+* 🏪 **Lojas Autônomas (Amazon Go)**: Estabelecimentos sem caixas ou atendentes, onde o cliente entra com QR Code e um denso sistema de câmeras no teto rastreia e cobra automaticamente os itens retirados das prateleiras.<br>
+* 📊 **Mapeamento de Hábitos**: A visão computacional em lojas físicas gera dados valiosos sobre o comportamento do consumidor, como horários de compra e preferências, integrando-os ao perfil digital do cliente.<br>
+* 🔍 **Busca Visual**: Ferramentas como o Google Lens permitem que o usuário fotografe um objeto desconhecido (como uma flor) para identificá-lo e descobrir onde comprá-lo. <br>
 
-* 👓 Realidade Aumentada (RA): Tecnologia que sobrepõe elementos digitais ao mundo real, tendo sido popularizada por jogos como Pokémon GO e hoje aplicada em soluções comerciais. <br>
-* 💄 Consultoria Virtual: Marcas de cosméticos utilizam IA e câmeras de celulares para analisar a pele do cliente (rugas, olheiras) e recomendar produtos personalizados sem necessidade de testes físicos.<br>
-* 🛒 Caixas de Autoatendimento: Supermercados combinam sensores de peso e câmeras de visão computacional sobre os caixas para registrar produtos corretamente e monitorar possíveis erros ou furtos.<br>
-* 🔞 Conformidade Regulatória: O sistema visual consegue identificar categorias de produtos, como bebidas alcoólicas, e bloquear a venda automaticamente caso esteja fora do horário permitido por lei.<br>
-* 🏪 Lojas Autônomas (Amazon Go): Estabelecimentos sem caixas ou atendentes, onde o cliente entra com QR Code e um denso sistema de câmeras no teto rastreia e cobra automaticamente os itens retirados das prateleiras.<br>
-* 📊 Mapeamento de Hábitos: A visão computacional em lojas físicas gera dados valiosos sobre o comportamento do consumidor, como horários de compra e preferências, integrando-os ao perfil digital do cliente.<br>
-* 🔍 Busca Visual: Ferramentas como o Google Lens permitem que o usuário fotografe um objeto desconhecido (como uma flor) para identificá-lo e descobrir onde comprá-lo. <br>
+-----
+
+| 🗂  **Palavras-Chaves** | 📝 **Anotações** |
+|-------------------------|------------------|
+| • Visão Computacional no dia a dia  |  Existem diversas apliações do uso de Visão Computacional|
+| •  |  |
+| •  |  |
+---
+<h3>📌 Resumo </h3>
+
+> A visão computacional tem apliações nas mais diversas áreas possíveis, desde agronomia a indústria e da segurança a estética.
 
 <h3> Aula 03</h3>
-<details><summary> Introdução ao Sistema de Visão Computacional</summary>
-*  🧠 Analogia com a visão humana: O sistema computacional imita o processo biológico, onde a luz refletida pelos objetos é captada, convertida em estímulos e processada para identificar o que está na cena (como diferenciar frutas).
+ Introdução ao Sistema de Visão Computacional
+*  🧠 **Analogia com a visão humana**: O sistema computacional imita o processo biológico, onde a luz refletida pelos objetos é captada, convertida em estímulos e processada para identificar o que está na cena (como diferenciar frutas).
 <br>
 * 📷 Variedade de sensores: Ao contrário do olho humano, a máquina utiliza diferentes sensores (RGB, 3D Time of Flight, infravermelho, etc.) que podem ser acoplados a câmeras ou satélites para gerar diversos tipos de imagem.
 <br>
@@ -87,18 +108,18 @@
 * 📏 Cálculo de tamanho (Cinza): O tamanho teórico de arquivo é calculado multiplicando as dimensões da imagem; por exemplo, uma imagem $500 × 500$ em escala de cinza ocupa aproximadamente $244 \text{ KB}$.
 <br>
 * 📦 Peso de imagens coloridas: Arquivos coloridos ocupam o triplo do espaço das imagens em tons de cinza (para a mesma resolução), pois cada pixel precisa armazenar dados para os três canais de cor simultaneamente.
-</details>
+
 <br>
 
 [VIDEO AULA 03](https://www.youtube.com/watch?v=yf3tVfV_59Y&t=2S)
 
------
+----
 
 | 🗂  **Palavras-Chaves** | 📝 **Anotações** |
 |-------------------------|------------------|
-| •  |  |
-| •  |  |
-| •  |  |
+| • item 1 | Lorem ipsum  |
+| • item 2 | Lorem ipsum  |
+| •  item 3| Lorem ipsum  |
 ---
 ### 📌 Resumo
-
+> Lorem ipsum 
