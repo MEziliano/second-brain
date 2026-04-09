@@ -125,4 +125,6 @@ Apenas dessas famílias destacadas ainda existem muitas outras.
 ## Hierarquia de recursos
 ![IMAGEM](https://docs.cloud.google.com/static/resource-manager/img/cloud-hierarchy.svg?hl=pt-br)
 
+O GCP oferece a possibilidade de segmentar os projetos de dentro determinada organização(empresa) e com isso podemos estabelecer recursos (dinheiro) para determinado depertamento. 
+
 [DOCUMENTAÇÃO](https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy?hl=pt-br)
