@@ -225,8 +225,64 @@ $$
 Quanto mais próximo a 1 (ou a 100%) melhor o ajuste do modelo. 
 
 
-# [PRÁTICA] - Semana 03 - Predição Regresão Linear Simples e Múltipla 
+## [PRÁTICA] - Semana 03 - Predição Regresão Linear Simples e Múltipla 
 
 [VIDEO](https://drive.google.com/file/d/1Yvp2dna_ozTGXqewLp5oi6rUCKAFbkEE/view?usp=sharing)
 
 [VIDEO](https://www.youtube.com/watch?v=nA-FwoF2sss)
+----
+
+
+## Árvores de Regressão
+
+* **Introdução**
+* **Construção da Árvore de Regressão**
+* ***Bagging***
+* ***Random Forest***
+
+[AULA GRAVADA](https://drive.google.com/file/d/1JNjya9YEcJXTgZVCU7S68CDI4lAf82wy/view?usp=sharing)
+
+### Introdução
+
+Tem por objetivo a construção de uma árvore que permita realizar perdições de uma variável dependente $(Y)$ em função de uma ou mais variáveis independentes ou explicativas $(X)$.
+
+### Construção das Árvores de Regressão
+
+**Estratificação do espaço amostral (Preditor):**
+
+Dividir o espaço predito em $J$ regiões não sobrepostas, $R_1, R_2, ..., R_j$, minimizando a somando de quadrados dos resíduos:
+
+$$
+SQR = \sum^J_{j=1} \sum_{i \in R_j} (y_i - \hat{y}_R{_j})^2
+$$
+
+em que: $y_i$ é o valor observado e; $\hat{y}_R{_j}$ é o valor predito para uma observação pertencente a região $R_J$, o qual é dado pela medida dos valores observados de todos os indivíduos da região. 
+
+**Observação:** Tais regiões são dadas por retangulos ou caixas devido a facilidade em sua construção e interpretação.
+
+![alt text](./image.png)
+
+**Problema** Tarefa árdua computacionalmente inviável
+
+   **Solução** realizar divisões recursivas binárias;
+   * Seleciona-se o preditor $X$, e o ponto de corte $T$, que divide o espaço em duas regiões considerando o menor valor da Soma do Quadrado do Resíduo. $(SQR)$.
+
+Especificamente, patriciona as regiões, 
+ > $R_1(j,T) = {X|X_j < T}$ e $R_2(j,T) = {X|X_j \ge T}$ que minimizam, 
+
+ $$
+
+\displaystyle\sum_{i : x_i \in R_1 (j,T)} (y_i - \hat{y}_{R1})^2 +  \displaystyle\sum_{i : x_i \in R_2 (j,T)} (y_i - \hat{y}_{R2})^2
+
+ $$
+
+ **Exemplo** Produção, peso de cem grãos e número de espigas de um conjunto composto de seis cultivares de milho. 
+
+ |Cultivares| Peso de cem grãos (PCG) | Número de espigas por Planta (NES)| Produção de Grãos (P) |
+ | --- | --- | --- | ---- |
+ |C1 |81 |14| 6,16|
+ |C2| 130| 3 | 6,17|
+ |C3| 141| 11| 6,21|
+ |C4| 87| 2|4,52|
+ |C5| 169| 11| 6,62|
+ |C6|170|11|6,91|
