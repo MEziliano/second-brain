@@ -286,3 +286,119 @@ Especificamente, patriciona as regiões,
  |C4| 87| 2|4,52|
  |C5| 169| 11| 6,62|
  |C6|170|11|6,91|
+
+Para facilitar  o entendimento da construção de uma árvore de regressão, vamos ordernar o conjunto de dados  por cada uma das variaáveis em estudo
+
+|Cultivares| P | **(NES)**| PCG |
+| --- | --- | --- | ---- |
+|C4 |4,52 |2| 87|  
+|C2| 6,17| 3 | 130|
+|C3| 6,21| 11| 141|
+|C5| 6,62| 11|169|
+|C6| 6,91| 11| 170|
+|C1|6,16|14|81|
+
+
+|Cultivares| P | (NES)| **PCG** |
+| --- | --- | --- | ---- |
+|C1 |6,16 |14| 81|  
+|C4| 4,52| 2 | 87|
+|C2| 6,17| 3| 130|
+|C3| 6,21| 11|141|
+|C6| 6,62| 11| 169|
+|C1|6,91|11|170|
+
+* Primeira divisão: Valores de SQR considerando partições binárias
+
+| Variável | 2 | 3 | 11 |
+| --- | ----| ---| ---|
+| **NES**| 0,45, | 1,74, | 3,44|
+
+|Variável | 81| 87| 130| 141| 169|
+| --- | ---| ---| ----| ---| ---|
+| **PGC**| 3,44| 1,87| 2,05| 2,11| 2,65|
+
+
+* Segunda divisão: Valores SQR considerando partições binárias
+
+| Variável |   3 | 11 |
+| --- |  ---| ---|
+| **NES**|  0,38|  0,37|
+
+|Variável | 81| 130| 141| 169|
+| --- | ---|  ----| ---| ---|
+| **PGC**| 0,37|  0,25| 0,04| 0,15|
+
+O procedimento é repetido até um critério de parada, por favor, não ter mais de cinco indivíduos nos nós terminais.
+
+
+* Poda da Árvore: Reduzir a complexidade da árvore aumentando o poder preditivo da mesma. 
+
+**Custo de complexidade da Poda**
+
+$$
+\displaystyle\sum^{|T|}_{m=1 X_i \in R_m} \sum{} (y_i - \hat{YR}_m)^2 + \alpha|T|
+$$
+
+
+em que: $|T|$ é o número de nós terminais e; $\alpha$ é o parâmetro de ajuste. 
+
+| Vantagens | Desvantagens|
+|---| ---|
+|Fácil interpretação| Poder preditivo| 
+| Robusta a *outliers*| |
+| Insensível a transformações monótonas| |
+
+#### Bagging 
+
+* Obter diversas amostras *bootstrap* e considerar a média obtidas por todas as árvores (não podadas) com valor predito:
+
+$$
+\hat{f}_{bag} (X) = \dfrac{1}{B} \sum^{B}_{b=1} \hat{f}^{*b} (X)
+$$
+
+* ***Out-of-bag (OOB)***: Pode ser demonstrado que cada amostra *bootstrap* possui em média 2/3 das observações. As demais 1/3, não utilizadas no ajuste, são referidas como observações *Out-of-bag* e utilizadas para predição possbilitando obter Erro Quadrático Médio (EQM) de predição. 
+
+#### Random Forest
+
+* Variação do *bagging*
+Não são utilizadas todas as variáveis na construção da árvore.
+   * Árvore de regressão: ($p/3$), em que $p$ é o número de variáveis.
+
+| *Bagging* | *Random Forest*
+| ------ | ------ |
+|Variável mais importante quase sempre no topo | Variável amis importante não estará no topo|
+|Árvore semelhantes| Árvores diferentes|
+| Predições altamente correlacionadas| Predições menos correlacionadas| 
+| Pouca reducação da variabilidade | Maior redução da variabilidade| 
+
+# [Prática] Aula Prática
+
+[Aula Prática 1 - Ajustes](https://www.youtube.com/watch?v=rd_6d5HCCzs)
+* **Exemplo 1**: Considere o conjunto de dados **Boston**. O objetivo é predizer o valor mediano das casas ocupadas em Boston (*medv*) por meio de 13 variáveis explicativas. 
+
+| Coluna | Descrição|
+|---- | ---- |
+| CRIM   | Taxa de crime|
+| ZN     | Proporção de terrenos residenciais divididos em lotes com mais 25.000 pés quadrados|
+| INDUS  | Proporção de acres de negócios não varejistas por cidade|
+| CHAS   | Variável indicadora Charles River (1 se o trecho limita rio; 0 caso contrário) |
+| NOX    | Concentração de óxidos nítricos (partes por 10 milhões) |
+| RM     | Número médio de quartos por habitação |
+| AGE    | Proporção de unidades ocupadas pelo proprietário construídos antes de 1940| 
+| DIS    | Distância para cinco centros de emprego em Boston |
+| RAD    | Índice de acessibilidade às rodovias radiais| 
+| TAX    | Taxa de imposto sobre a propriedade de valor totoal por USD 10.000|
+| PTRATIO | Proporação aluno professor por cidade|
+| BLACK   | Proporção de negros|
+| LSTAT   | % da população mais simples |
+ 
+
+[Aula Prática 2 - Poda](https://www.youtube.com/watch?v=nwvghdiQB9E)
+
+[Aula Prática 3 - *Bagging*](https://www.youtube.com/watch?v=9PNt_eA4tSY)
+
+[Aula Prática 4 - Validação](https://www.youtube.com/watch?v=OtlUSopY-BY)
+
+
+
