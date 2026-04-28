@@ -1,3 +1,7 @@
+
+
+<details>
+<summary> Estrutura recomendada </summary>
 UFV/
 │
 ├── ELT-5XX/                        # Diretório da Disciplina 
@@ -13,3 +17,5 @@ UFV/
 │   │   └── demographic_data.csv
 │   └── notes.md
 │    
+
+</details>
