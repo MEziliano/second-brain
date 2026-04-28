@@ -1,5 +1,3 @@
-
-
 <details>
 <summary> Estrutura recomendada </summary>
 UFV/
@@ -16,6 +14,6 @@ UFV/
 │   │   ├── Atividade_01-Envio.pdf
 │   │   └── demographic_data.csv
 │   └── notes.md
-│    
+│
 
 </details>
