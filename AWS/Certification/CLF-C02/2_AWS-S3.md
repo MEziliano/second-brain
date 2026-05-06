@@ -65,7 +65,104 @@ graph LR
 * **S3 Glacier Flexible Retrieval**: Replaced S3 Glacier, supporting data archiving with retrieval times from minutes to hours.
 * **S3 Glacier Deep Archive**: Lowest-cost storage class, designed for data that is rarely accessed, with retrieval times within hours.
 * **S3 Express One Zone** : High-performance storage class for frequently accessed data, providing the lowest latency.
+
 ### Key Considerations
 * **Durability**: All S3 storage classes (except S3 One Zone-IA) store data across multiple, geographically separated Availability Zones to ensure 99.999999999% durability.
 * **Minimum Storage Duration**: IA and Glacier classes have minimum storage duration charges (e.g., 30 days for IA, 90-180 days for Glacier).
 * **Lifecycle Policies**: You can use Lifecycle rules to automatically transition objects between storage classes to reduce costs as data ages
+
+---
+| **Key Words**      |    **Content**        | 
+| ------------------ |                  ---------- | 
+| Data access patterns <br> Performance needs <br> Cost-optimization|  **Classes:** <br> S3 Standard <br> S3 Intelligent-Tiering <br> Standard IA <br> S3 Glacier                  | 
+|                                                                    |                            | 
+
+> 
+
+<h3><details><summary> Diagram view</summary>
+
+
+
+```mermaid
+graph LR
+    root[<b>Amazon S3 Storage Classes</b>]
+
+    %% Main Categories
+    subgraph Frequent_Access [<b>Frequent Access / High Performance</b>]
+        direction LR
+        Standard[<b>S3 Standard</b><br/>General purpose, apps, websites]
+        Express[<b>S3 Express One Zone</b><br/>Lowest latency<br/>Single AZ]
+    end
+
+    subgraph Intelligent [<b>Automatic Optimization</b>]
+        IntelligentTiering[<b>S3 Intelligent-Tiering</b><br/>Automatically moves data<br/>No operational overhead]
+    end
+
+    subgraph Infrequent_Access [<b>Infrequent Access IA</b>]
+        direction LR
+        StandardIA[<b>S3 Standard-IA</b><br/>Rapid access when needed<br/>Multi-AZ]
+        OneZoneIA[<b>S3 One Zone-IA</b><br/>cheaper<br/>Single AZ<br/>Recreatable data]
+    end
+
+    subgraph Archive [<b>Glacier Archiving</b>]
+        direction LR
+        GlacierInstant[<b>Glacier Instant Retrieval</b><br/>Millisecond retrieval]
+        GlacierFlexible[<b>Glacier Flexible Retrieval</b><br/>Minutes to hours<br/>Replaced standard S3 Glacier]
+        GlacierDeep[<b>Glacier Deep Archive</b><br/>Lowest cost<br/>Hours to retrieve]
+    end
+
+    %% Connections
+    root --> Frequent_Access
+    root --> Intelligent
+    root --> Infrequent_Access
+    root --> Archive
+
+    Standard 
+    Express 
+    IntelligentTiering 
+    OneZoneIA 
+    GlacierInstant 
+    GlacierFlexible 
+    GlacierDeep 
+
+    %% Key Considerations (Floating notes or connected)
+    note1["<b>⚠️ Durability</b><br/>99.999999999%<br/>Except One Zone-IA"]
+    note2["<b>⏳ Min Duration</b><br/>IA: 30 days<br/>Glacier: 90-180 days"]
+    note3["<b>🔄 Lifecycle</b><br/>Auto transition<br/>to reduce costs"]
+
+    root -.-> note1
+    note1 -.-> note2
+    note2 -.-> note3
+
+    %% Styling
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef frequent fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef intelligent fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    classDef infrequent fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef archive fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+    classDef notes fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
+
+    class note1,note2,note3 notes;
+    class Standard,Express frequent;
+    class IntelligentTiering intelligent;
+    class StandardIA,OneZoneIA infrequent;
+    class GlacierInstant,GlacierFlexible,GlacierDeep archive;
+``` 
+<details></h3>
+
+```mermaid
+flowchart LR
+
+
+    A[Amazon S3 Storage Classes]  --> B[Standard] 
+    A --> C[Express]
+    A --> D[IntelligentTiering]
+    A --> E[StandardIA]
+    A --> F[OneZoneIA]
+    A --> G[Glacier Instant]
+    
+
+    G --> H[GlacierInstant]
+    G --> I[GlacierFelixble]
+    G --> J[Glacier Deep]
+``` 
