@@ -1,12 +1,14 @@
 # [AWS] - CLF-C02 - Cloud Practitioner
 
-# What is Cloud Computing and AWS?
+# S3 
 
----
+One of the services provided by AWS in Cloud. Is a HD in cloud. It is able to upload several types of files, such as .docx, .xsls, ... you pay as you go. 
+You can think in S3 like a closet and there are many drawer. Like you can create folder in you computer, they decide to put bucket to be different.
 
-### Regions and Zone
+When creat a bucket there are two options: 
+* General purporse - recommended to most of use cases 
+* Directory - recommended for low-latency, such as a game. for example.
 
-Each region have a different cost. That depends on availability of the service and taxes.
 
 ```mermaid
 graph LR
