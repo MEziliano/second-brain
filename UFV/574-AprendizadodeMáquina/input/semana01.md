@@ -54,3 +54,86 @@ Aprendizado de máquina é o termo que se dá a capacidade de determinado softwa
 **Contexto histórico**
 
 Apesar de muito usado atualmente, o aprendizado de máquina surgiu na segunda guerra mundial, com os esforços dos aliados de desenvendar as mensagens do alemães. Ao término da guerra houve um período sem grandes avanços significativos. 
+
+**Introdução**
+| Aprendizado Humano |  Aprendizado de Máquina | 
+| ------------------ | ----------------------- |
+| Aprende aos poucos | pode aprender com apenas uma vez| 
+| Aprendizado por meio de exemplo| Aprendizado por meio de dados|
+| Adquire habilidades | Identifica padrões| 
+
+**Contextualização**
+* Aprendizado de máquinas é datado da II Guerra Mundial.
+    * Limitação de processamento esfriou o desenvolvimento, o que ficou conhecido como *inverno da IA*
+* Alta capacidade de processamento das máquinas
+* Grande quantidade de dados disponíveis
+* Maiores empresas de dados: Facebook, Google, Microsoft, Amazon
+
+**Modelos de ML**
+<br>
+$y = f(x)$, onde $y$ representa as saídas, ou seja uma predição, umaestimação do valor. $f$ representa uma função otimizada, que são os modelos e os algoritmos. E, por fim, $(x)$ representa as entradas, o que pode ser imagens, sons, valore e características. 
+
+### Tipos de Treinamentos
+| Supervisionado | Não Supervisionado| 
+| -------------  | ----------------- |
+| Entradas rotuladas|  Entradas |
+| Regressão linear, Redes Neurais, etc| Clusterização, Kmeans, Aprendizado por reforço|
+|sadídas para futuraas amostras | saídas agrupadas por clusters|
+
+
+### **Etapas da Construção de um modelo de ML**
+1. Formulação do problema
+* Aumentar vendas
+* Perfil de cliente
+* Sexo
+* Idade
+* Religião
+* Estado civil
+* Gasto médio na loja
+* Dados das compras
+* Produto
+* Gasto médio por compra
+* Ocasião
+2. Seleção e adaptação do banco de dados
+* Compra
+* Camisa manga longa
+* Camisa manga curta
+* Camiseta casual
+* Camiseta regata
+3. Pré-processamento do banco de dados
+Retirar inconsistências
+    * Valores em branco
+    * Especificações erradas
+    * Outliers
+* Transformação de dados
+* Estado civil:
+    * Solteiro = 1
+    * Casado = 2
+    * Divorciado = 3
+    * Viúvo = 4
+* Descartar dados não
+relevantes
+4. Separação do banco de dados em dados de
+treinamento e dados de validação
+Dados de treinamento
+    * 70% do banco de dados
+* Dados de validação
+    * 30% do banco de dados
+* Separação 70/30
+    * Até 90/10
+5. Treinamento do modelo com os dados de
+treinamento
+* Ajuste na função
+    * 𝑦 = 𝑓(𝑥)
+* 𝑓(𝑥) pode ser:
+*  Máquina de vetor de suporte
+    * Rede neural artificial
+    * Sistema nebuloso
+6. Validação do modelo e estimativa de
+desempenho com os dados de validação
+* Dados de validação
+* Métricas de desempenho
+* Escolha do melhor
+modelo
+7. Implementação do modelo para a aplicação
+
