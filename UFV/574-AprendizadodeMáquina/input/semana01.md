@@ -137,3 +137,64 @@ desempenho com os dados de validação
 modelo
 7. Implementação do modelo para a aplicação
 
+# Aula 02 - Tipos de dados e tratamentos de dados
+### Tipos de dados
+* Estabelecer relações entre entradas e saídas conhecidas
+* Aplicar as relações desenvolvidas para dados não conhecidos
+
+* **Qualitativos** (categóricos)
+    * Não assume valores numéricos
+    * **Nominal**: Não ordenados. Ex.: gênero, estado civil, religião...
+    * **Ordinário**: ordenados. Ex.: Tamanho de roupa, meses do ano, alfabeto...
+
+* **Quantitativos**
+    * Medidos em números
+    * **Discretos**: valores contávies e determinados. Ex.: Idade em anos, marchas de um carro...
+    * **Contínuos**: quantidade dentro de um intervalo. Ex.: Altura e peso de uma determinada pessoa.
+
+
+### Ferramentas para exploração dos dados
+| Ferramentas descritivas | Ferramentas de inferência|
+| ---------------------------- | ------------------------ |
+| Medidias de tendência central| Teste de hipótese|
+| Média <br> Mediana <br> Moda | Análise da variância (ANOVA)| 
+| Medidas de dispersão |Teste Chi Quadrado |
+| Intervalor <br> Desvio Padrão| Regressão Linear|
+| Distribuição das frequências| |
+| Histogramas| | 
+
+ ### Explroração dos dados
+
+* **Inspeção do banco de dados**
+
+    1 . Conhecer as variáveis do banco de dados
+    * Nomes
+    * Características
+    * Intervalo máximo e mínimo
+
+    2 . Reconhecer dados ausentes ou inválidos
+    * Tratar ou desconsiderar estes dados
+    
+    3 . Conhecer a distribuição dos dados
+    * Evitar dados destoantes (*outliers*)
+    * Considere $\mu$ a média de uma variável $x$e desvio padrão $\sigma$
+    * Se $\mu - 3\sigma > x_i > \mu + 3\sigma$, provavelmente $x_i$ é um outlier
+    * Na dúvida, realizar o ajuste do modelo com e sem estes valores
+
+### Exemplo com dados que atrapalham
+| Nome | Sexo | idade | Altura (m) | Peso (kg) | Consumo de regrigerante (L/semana) |
+| ------- | --- | ----- | ----------| ----------| ------------------------------------| 
+| Bárbara | F | 25 | 1,65 | 59,6| 04|  
+| Danilo | M | 32 | 1,70| 96| 1,2| 
+| Gabriela | F | 51| 1,62| 55,4| 0,1| 
+| Joaquim | M | 35| 1,57| 60,0 | 1,0| 
+| Melina| F | 63 | 1,75| 70,0| 0,6|
+| Patrick| M |46| 1,80| 103,0| 1,3| 
+| Tatiane |F | 75 | 1,52| 50,3| 0,0|
+
+$
+\mu_A = \dfrac{04+1,2+0,1+1,0+0,6+1,3+0,0}{7} = 1,171 \text{L/semana} 
+\sigma_A = \sqrt{\dfrac{\sum^n_{i=1} (x_i \mu_a)^2}{n}} = 0,853 \text{L/semana} \\
+\mu_B = \dfrac{1,2+0,1+1,0+0,6+1,3+0,0}{6} = 0,7 \text{L/semana}  
+\sigma_B = \sqrt{\dfrac{\sum^n_{i=1} (x_i \mu_b)^2}{n}} = 0,467 \text{L/semana}
+$ 
