@@ -1,0 +1,14 @@
+[project]
+name = "meu-projeto"
+version = "0.1.0"
+description = "Projeto base em Python para ciência de dados e engenharia."
+authors = [{name = "Mumu", email = "seu@email.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.9",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scikit-learn>=1.2",
+    "seaborn>=0.13.2",
+]
