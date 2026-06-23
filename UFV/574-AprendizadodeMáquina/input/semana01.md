@@ -199,4 +199,5 @@ $
 \sigma_B = \sqrt{\dfrac{\sum^n_{i=1} (x_i \mu_b)^2}{n}} = 0,467 \text{L/semana}
 $ 
 
+
 # Aula 03 - Relação entre variáveis e extração de características
