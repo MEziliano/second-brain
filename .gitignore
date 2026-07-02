@@ -16,3 +16,7 @@ venv
 .python-version
 
 .gemini
+
+.lock
+
+.toml

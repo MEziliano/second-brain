@@ -1,1 +1,4 @@
-# Semana 02 
+# Semana 02 - INtrodução às Redes Neurais
+
+
+## Representação 
