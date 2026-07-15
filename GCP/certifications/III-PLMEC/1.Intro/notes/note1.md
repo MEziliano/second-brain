@@ -69,4 +69,30 @@ This lesson clarifies key AI and machine learning (ML) terminology and categoriz
 ### ML Problem Categories
 | Category | Data Type | Goal| Examples|
 | -------- | -------- | ----| -------| 
-| Supervised Learning| Labeled|   Task-driven|  Classification (e.g., cat vs. dog), Regression (e.g., forecasting sales)|  |Unsupervised Learning|Unlabeled | Data-driven | Clustering (e.g., segmentation), Association, Dimensionality reduction  |
+| Supervised Learning| Labeled|   Task-driven|  Classification (e.g., cat vs. dog), Regression (e.g., forecasting sales)| 
+|Unsupervised Learning|Unlabeled | Data-driven | Clustering (e.g., segmentation), Association, Dimensionality reduction  |
+
+
+Common ML ModelsClassification: Uses models like logistic regression to predict categorical variables.  Regression: Uses models like linear regression to predict numeric variables.  Clustering: Uses techniques like k-means clustering to group similar data points.  Association: Uses techniques like Apriori to identify relationships between variables.  Dimensionality Reduction: Uses methods like principal component analysis to simplify datasets and improve efficiency.  These models are utilized within tools such as BigQuery ML, AutoML, and custom training environments. 
+
+# BigQuery ML
+
+### Key phases
+01. Extract, transform and load data into BigQuery.
+02. Select and preprocess feeatures.
+03. Create the model inside BigQuery
+
+```SQL
+CREATE MODEL
+ecommerce.classification
+OPTIONS
+(
+    model_type='logistc_reg', 
+    input_label_cols = "will_buy_later"
+) AS
+/* SQL query with training data*/
+```
+BigQuery also supports other popular ML models. Include: lineaer regression, k-means, clustering and time series forcasting models. And, in addition to providing different types of Machine Learning models, also supports MLOps
+
+04. Evaluate the performance of the trained model.
+05. Use the model to make predictions. 

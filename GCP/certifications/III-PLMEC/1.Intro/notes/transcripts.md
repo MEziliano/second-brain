@@ -520,3 +520,131 @@ of a model, for example, combining customer characteristics like age, driving vi
 
 You use ML techniques like principal component analysis to solve these problems.
 
+# 6. BigQuery ML
+With the different types of ML models in your mind, let's apply concept to practice.
+
+In this lesson, you explore BigQuery ML and walk through the steps to build an ML model with SQL commands.
+
+You learned about BigQuery, the primary data analytics tool on Google Cloud, from the previous lesson.
+
+BigQuery provides two services in one.
+
+It's a fully managed storage facility to load and store data sets and a fast, SQL-based analytical Engine.
+
+The two services are connected by Google's high-speed, internal network.
+
+It's this super-fast network that allows BigQuery to scale both storage and compute independently, based on demand.
+
+Although BigQuery started out solely as a data warehouse, over time, it has evolved to provide features that
+
+support the data-to-AI lifecycle, meaning you can perform both data analytics and build predefined ML models within BigQuery.
+
+In this lesson, you explore BigQuery's capabilities to build ML models and walk through the steps and key SQL commands to do so.
+
+If you've worked with ML models before, you know that building and training them can be very time-intensive.
+
+You must first import and prepare the data.
+
+Then, experiment with different ML models and tune the parameters.
+
+To improve model performance, you also need to go back and forth to train the model with new data and features.
+
+And finally, you need to deploy the model to make predictions.
+
+This is an iterative process that requires a lot of time and resources.
+
+Now, with BigQuery ML, you can manage tabular data and execute ML models in one place with just a few steps.
+
+BigQuery ML tunes the parameters for you and helps you manage the ML workflow.
+
+Let's walk through the phases of a machine learning project and the key SQL commands.
+
+In phase 1, you extract, transform, and load data into BigQuery if it isn't there already.
+
+If you're already using other Google products, like YouTube, for example, look out for easy connectors to get that data into BigQuery before you build your own pipeline.
+
+You can enrich your existing data warehouse with other data sources by using SQL joins.
+
+In phase 2, you select and preprocess features.
+
+You can use SQL to create the training data set for the model to learn from.
+
+BigQuery ML does some of the preprocessing for you, like one-hot encoding of your categorical variables.
+
+One-hot encoding converts your categorical data into numeric data that is required by a training model.
+
+In phase 3, you create the model inside BigQuery.
+
+This is done by using the CREATE MODEL command.
+
+In this example, you want to create an ML model to predict customer purchasing behavior, specifically if they will buy this product in the future.
+
+You give the model a name, ecommerce.classification.
+
+You then specify the model type.
+
+Remember the previous lesson about ML model types?
+
+If you want to predict whether a customer will buy or not, which ML model should you use?
+
+That's right.
+
+A logistic regression model is the answer because you are solving a classification problem.
+
+Apart from the logistic regression model to solve the classification problem, BigQuery ML also supports other popular ML models.
+
+They include regression models, such as linear regression, and other models, such as k-means clustering and time series forecasting models.
+
+In addition to providing different types of machine learning models, BigQuery ML supports MLOps, Machine Learning Operations.
+
+MLOps turns your ML experiment to production and helps deploy, monitor, and manage the ML models.
+
+You'll learn more about MLOps later in this course.
+
+You're recommended to start with simple options, such as logistic regression and linear regression, and use the results as a benchmark to
+
+compare against more complex models, such as DNN, Deep Neural Networks, which take more time, and computing resources to train and deploy.
+
+After specifying the model type, you also need to define the label column.
+
+Why?
+
+Remember the two major categories of ML models, supervised and unsupervised?
+
+The former deals with labeled data and predicts a goal, whereas, the latter handles unlabeled data and identifies a hidden pattern.
+
+Is this a supervised or unsupervised model?
+
+Of course, it's a supervised classification problem.
+
+Thus, a labeled column.
+
+From there, you can run the query.
+
+In phase 4, after your model is trained, you can execute an ML.EVALUATE query to evaluate the performance of the trained model on your evaluation data set.
+
+It's here that you specify which evaluation metrics the model will assess, such as accuracy, precision, and recall.
+
+You'll explore these metrics later in this course.
+
+Finally, in phase 5, when you're happy with your model performance, you can then use it to make predictions.
+
+To do so, invoke the ML.PREDICT command on your newly trained model to return with predictions and the model's confidence in those predictions.
+
+With the results, your label field will have "predicted" added to the field name.
+
+This is your model's prediction for that label.
+
+Ready for hands-on practice?
+
+Let's apply these steps and build your first ML model in BigQuery.
+
+In the upcoming lab, you'll use real e-commerce data from the Google Merchandise Store to predict whether a visitor will make future purchases.
+
+You'll gain valuable experience creating data sets, training and evaluating ML models, and using them for predictions.
+
+Don't worry if SQL isn't your strong suit.
+
+Gemini Code Assist will be your 24/7 tutor, helping you explain, create, and debug code throughout the lab.
+
+Let's get started.
