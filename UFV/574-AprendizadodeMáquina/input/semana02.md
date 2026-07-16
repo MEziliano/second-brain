@@ -1,11 +1,137 @@
-# Semana 02 - INtrodução às Redes Neurais
+# Semana 02 - Introdução às Redes Neurais
 
 
-## Representação dos neurônios biológicos
+## Aula 01 - Introdução às Redes Neurais Artificiais
+### Representação dos neurônios biológicos
 
 As RNAs(Redes Neurais Artificiais) servem para imitar o neurônio humano. Não sendo concorrentes das demais arquiteturas já vistam em se tratando de Aprendizado de Máquina. 
 
-O percpetron é a representação mais simples de uma rede neural artificial. Contando apenas com uma saída. Um dos grandes pontes do perceptron é o ajuste de pesos da função. 
+O percpetron é a representação mais simples de uma RNA (rede neural artificial). Contando apenas com uma saída. Um dos grandes pontes do perceptron é o ajuste de pesos da função. 
 
 #### Ajuste de um modelo perceptron
 É a fase de treinamento da RNA. 
+* Ajuste de parâmtros = Fase de Treinamento
+* $X^{(k)}$: vetor de entrada da amostra $k$
+* $d^{(k)}$: valor desejado para $y$
+* $W$: vetor de pesos sinápticos
+* $b$: limiar de ativação do perceptron
+$$
+
+\begin{cases}
+   W^{atual} = W^{anterior} + \eta+(d^{(k)} - y)^{X^{(k)}}\\
+   W^{atual} = W^{anterior} + \eta+(d^{(k)} - y)(-1)
+   
+\end{cases}
+$$
+* $\eta$: taxa de aprendizagem do treinamento
+* $0<\eta<1$
+* Geralmente valores entre 0,01% a 10%
+
+### Início do treinamento -  Perceptron:
+1. Carregar o conjunto de treinamento para a matriz $𝑋$;
+2. Carregar o conjunto de saídas desejadas para o vetor $𝑑$;
+3. Concatenar a coluna de valores -1 à matriz $X$, representando a entrada para o $𝑏𝑖𝑎𝑠$;
+4. Atribuir valores aleatórios normalizados aos pesos sinápticos $𝑊$, lembrando que $𝑏$ está no vetor $𝑊$;
+5. Escolher o valor da taxa de aprendizado $\eta$;
+6. Determine o número máximo de épocas de treinamento $𝑒𝑝𝑜𝑐𝑎_{max}$;
+
+### Treinamento de um percpetron
+
+7. Iniciar o contador de épocas do treinamento $(𝑒𝑝𝑜𝑐𝑎 = 0)$;
+
+8. Faça até que $𝑒𝑟𝑟𝑜 = 0$:
+    1. Atribua $𝑒𝑟𝑟𝑜 = 0$;
+    2. Para cada amostra de treinamento ${𝑋^{(k)}, 𝑑{(k)}}$ <br>
+    2.1. Faça $𝑢 = 𝑋{(k)}𝑊$; <br>
+    2.2. Faça $𝑦 = 𝑠𝑖𝑛𝑎𝑙 (𝑢)$ ; <br>
+    2.3. Se $𝑦 ≠ 𝑑{(k)}$ : <br>
+a) Faça $𝑊^{atual} = 𝑊^{anterior} + 𝜂(𝑑^{(k)} − 𝑦)𝑋()$; <br>
+b) Atribua $𝑒𝑟𝑟𝑜 = 1$;
+8.3. Faça $𝑒𝑝𝑜𝑐𝑎 = 𝑒𝑝𝑜𝑐𝑎 + 1$;
+8.4. Se $𝑒𝑝𝑜𝑐𝑎 > 𝑒𝑝𝑜𝑐𝑎_{max}$, pare o treinamento.
+**Fim do treinamento – Perceptron**
+### Operação de um perceptron
+**Início da fase de operação:**
+1. Carregar o vetor de amostra $𝑋$;
+2. Concatenar o valor $-1$ à matriz $X$, representando a entrada para o $𝑏𝑖𝑎𝑠$;
+3. Carregar o vetor de pesos resultante do treinamento $𝑊$, lembrando que $𝑏$ está no vetor $𝑊$;
+4. Faça $𝑢 = 𝑋^{(k)} 𝑊$;
+5. Faça $𝑦 = 𝑠𝑖𝑛𝑎𝑙(𝑢)$;
+6. Se $𝑦 > 0$:
+    1. A amostra $X$ pertence à classe A;
+7. Caso contrário:
+    1. A amostra X pertence à classe B;
+**Fim da fase de operação.**
+
+
+### Considerações finais
+* Fase de treinamento:
+* $𝑒𝑟𝑟𝑜 = 𝑑^{(k)} − 𝑦$
+* $𝑦 = 𝑠𝑖𝑛𝑎𝑙(𝑢)$
+* Não realiza ajuste fino dos parâmetros do perceptron
+* Limitado a problemas de classificações binárias
+* Não separa classes não linearmente separáveis
+
+## Aula 02 - Adaline e a Regra Delta
+### Otimização de parâmetros do perceptron
+**Limitação de um perceptron**
+* Ajuste não é feito de maneira ótima
+* Converge para qualquer parâmetro que solucione a classificação
+* Solução depende do ponto de inicialização dos parâmetros
+* Mudar a forma de calcular o erro
+* Próprio valor da inferência
+* Função de ativação recebe entrada mais próxima da saída
+
+### Cálculo do gradiente descendente (LMS)
+* Cálculo do erro:
+$
+\text{erro} = d - u
+$
+* LMS:
+$$
+E(W) = \dfrac{1}{2} \sum^{p}_{k=1} (d^{(k)} - u)^2 = E(W)  \dfrac{1}{2} \sum^{p}_{k=1} (d^{(k)} - X^{(k)}W)^2 
+$$
+* Objetivo:
+    * Minimizar $E(W)$
+    * Ajustando os valores de $W$
+* Gradiente do erro quadrático médio:
+$$
+
+\nabla E(W) = \dfrac{\partial E(W)}{\partial W} = - \sum^{p}_{k=1} (d^{(k)} -u)X^{(k)}
+
+$$
+
+* Resultado no ajuste de pesos:
+$$
+\Delta W = - \eta \nabla E(W) = \eta \sum^{p}_{k=1} (d^{(k)} - u)X^{(k)} \implies W^{atual} = W^{anterior} + \eta \sum^{p}_{k=1} (d^{(k)} u)X^{(k)}
+
+$$
+
+### Algoritmo de treinamento do Adaline
+**Início do treinamento – Adaline (com regra Delta):**
+1. Carregar o conjunto de treinamento para a matriz $𝑋$ com a entrada do limiar −1;
+2. Carregar o conjunto de saídas desejadas para o vetor $𝑑$;
+3. Atribuir valores aleatórios normalizados aos pesos sinápticos $𝑊$ (com o $𝑤_0$);
+4. Escolher o valor da taxa de aprendizado $\eta$ e para o limar de precisão $\epsilon$;
+5. Determine o número máximo de épocas de treinamento $𝑒𝑝𝑜𝑐𝑎_{max}$;
+6. Iniciar o contador de épocas do treinamento $(𝑒𝑝𝑜𝑐𝑎 = 0)$;
+7. Faça até que $𝐸𝑄𝑀 𝑊^{atual} − 𝐸𝑄𝑀 (𝑊^{anterior}) ≤ 𝜀$:
+    1. Faça $𝐸𝑄𝑀 𝑊^{atual} − 𝐸𝑄𝑀 (𝑊^{anterior})$;
+    2. Faça $𝐸𝑄𝑀 𝑊^{atual} = 0$;
+    3. Para cada amostra de treinamento ${𝑋^{(k)}, 𝑑^{(k)}}$, faça:
+        1. $𝑢 = X^{(k)}W$;
+        2. $𝐸𝑄𝑀 𝑊^{atual} = 𝐸𝑄𝑀 (𝑊^{atual})+ d^{(k)- u^2}$;
+        3. $𝑊^{atual} = 𝑊^{anterior} + \eta(d^{(k)}- u )X^{(k)}$
+    4. Faça $𝐸𝑄𝑀 𝑊^{atual} = ^{EQM(W^{atual})}/p$;
+    5. Faça $𝑒𝑝𝑜𝑐𝑎 = 𝑒𝑝𝑜𝑐𝑎 + 1$;
+    6. Se $𝑒𝑝𝑜𝑐𝑎 > 𝑒𝑝𝑜𝑐𝑎_{max}$ , pare o treinamento.
+**Fim**
+
+### Considerações finais
+* Adaptive linear neuron
+    * Problemas de classificação linearmente separáveis
+    * Aproximador de função linear
+* Não é capaz:
+    * Problemas de classificação não linearmente separável
+    * Aproximar funções não lineares
+* Perceptron multicamadas (PMC)
