@@ -648,3 +648,102 @@ Don't worry if SQL isn't your strong suit.
 Gemini Code Assist will be your 24/7 tutor, helping you explain, create, and debug code throughout the lab.
 
 Let's get started.
+
+# 7. Generative AI on Google Cloud
+SPEAKER: In the previous module, you mastered AI infrastructure and foundations.
+Now let's dive into generative AI, the cutting edge of AI advancement.
+In this module, you'll explore Google's comprehensive Gen AI development architecture, from foundation models to powerful development tools and exciting applications.
+You'll discover everything from chatbots to the latest AI agents and agentic AI.
+Curious about what Gen AI can do for you and how Google can help you build your own Gen AI application?
+Let's begin with an overview of Gen AI on Google Cloud.
+Imagine you're a retail merchandiser needing to quickly generate thousands of personalized product descriptions that resonate with individual customer preferences.
+Or you're an automotive engineer who needs to rapidly iterate a novel vehicle design exploring countless combinations to optimize for weight or fuel efficiency.
+Or perhaps your financial analyst tasked with creating investment reports tailored to each client's unique portfolio and risk appetite.
+Generative AI, also known as Gen AI, can be your new go-to for all these tasks.
+Gen AI is transforming how you work and create.
+But what exactly is it?
+It's a type of artificial intelligence that generates content and takes action for you.
+What kind of content?
+The generated content can be multimodal, including text, code, images, speech, video, and even 3D.
+When given a prompt, which is a question or an instruction, Gen AI can produce images and videos, summarize meeting notes, create research reports, and develop Q&A chatbots.
+In addition to content creation, Gen AI, through AI agents, can take autonomous, goal-oriented action on your behalf, a topic you'll explore further in this module.
+For instance, Gen AI can automate workflows, plan and book travel, schedule appointments, and assist with clinical diagnoses.
+The possibilities are limited only by your imagination.
+Here's why you should trust Google as your partner on the Gen AI journey.
+Looking back, Google boasts a rich history of breakthroughs in generative AI, from the 2017 introduction of Transformer, a deep-learning neural network architecture that underpins all
+modern generative AI applications, to Gemini, a multimodal AI model launched in 2023 that expands the concept of Artificial General Intelligence, AGI, through its multimodal processing capabilities.
+Fast-forward to the last 18 months.
+The pace of innovation has accelerated dramatically.
+Google has released multiple foundation models and launched practical applications like NotebookLM, which lets you use AI to
+research and analyze content, and Gemini Enterprise, which allows you to build an AI agent with no code.
+You'll explore these models and applications in upcoming lessons.
+Looking ahead, how does Google deliver these AI services and help you build your own Gen AI applications?
+Let's break it down into a simplified, easy-to-understand three-layered stack.
+One-- foundation models. Built on Google's robust AI infrastructure, these powerful models are the intelligence behind all Gen AI applications, understanding language, images, and video. Two-- Gen AI development.
+Tools like Vertex AI Studio, Agent Builder, and Model Garden enable you to prototype applications, deploy AI agents, and fine-tune models.
+Three-- Gen AI applications.
+Products like Gemini Enterprise and NotebookLM help business users build AI agents without code.
+You'll get to explore all these exciting models and products in much more detail very soon.
+
+# 8. Foundation Models
+
+Previously, you explored the fascinating world of Gen AI architecture on Google Cloud.
+Now let's dive into the foundational layer, foundation models, the true backbone of all Gen AI applications.
+Interested in how AI creates content?
+Want to learn about Google's foundation models, their differences, the significance of multimodal AI, and how to customize these models for your specific needs?
+Let's explore these topics in this lesson.
+How does AI generate new content?
+It learns from a massive amount of existing content such as text, image, and video.
+The process of learning from existing content is called training, which results in the creation of a foundation model.
+A foundation model is usually a large model in the sense of a significant number of parameters, vast training data, and high computational power requirements.
+The number of parameters generally indicates a model's capacity to learn complex patterns and store information.
+To give you a perspective, the number of parameters has dramatically increased from millions to trillions in recent years.
+This substantial increase signifies that foundation models are becoming progressively more capable and smarter.
+As a pioneering AI company, Google trains foundation models for both general purposes, such as Gemini, and specialized tasks, such as Imagen.
+These models empower Google's own products like Google Search and Workspace and provide services for external users.
+Gemini family, ideal for general purposes and multi-modal data use cases-- popular options include Gemini Pro, the most capable model ideal for complex tasks requiring advanced reasoning; Gemini Flash, optimized for high speed and low latency-- perfect for high volume, real-time applications like chatbots; Gemini
+Flash-Lite, the most cost-effective model suited for high volume tasks where time isn't critical, such as batch translation and content summarization; specialty models designed for specific tasks, for instance Imagen for image generation, Veo for video processing, embeddings models for semantic search, and data representation.
+This list is subject to change due to the rapid evolution of foundation models. Always refer to Google documentation for the latest updates. You can find this via the QR code or reading list.
+Powered by the foundation models, Gen AI is driving new opportunities to enhance productivity, save operational costs, and create new value.You might have seen these opportunities from the use case about Coffee on Wheels in the previous module
+where you used Gen AI capabilities to automate the marketing campaign, generate customer feedback, and optimize truck routes.
+Take a moment to pause and reflect.
+What could be the use cases for using AI to solve your business problems?
+Each model is fine-tuned for optimal performance within its specific domain.
+However, Gemini has the potential to replace some of these models due to its general purpose and the ability to process data across multiple modalities, a feature known as multimodal.
+A multimodal model, such as Gemini, can process information from various sources, including text, images, and video.
+It can also generate content in multiple modalities.
+For example, you can prompt Gemini to generate a video walkthrough of a recipe based on a cookie photo.
+Multimodal capability marks a significant leap in generative AI's evolution, fundamentally changing how AI perceives and engages with its environment.
+Unlike earlier models limited to a singular modality, multimodal AI now processes an array of senses, enabling it to understand and interact using modalities like text, images, audio, and video.
+These models seamlessly process and synthesize information from multiple sources simultaneously.
+This holistic comprehension enables generative AI to grasp complex contexts, leading to more human-like reasoning and the ability to drive sophisticated, real-world actions.
+How can Gemini enhance your business operations?
+Here are some notable examples.
+Information extraction-- Gemini can read text from images and videos, extracting crucial information for further
+processing. Information analysis-- it can analyze information extracted from images and videos based on specific prompts.
+For instance, it can categorize expenses from a receipt.
+Information seeking-- Gemini can answer questions or generate Q&A based on information extracted from text, images,
+and videos. Content creation-- it can create stories or advertisements drawing inspiration from images and videos.
+The possibilities are extensive, limited only by your imagination regarding how Gen AI can address your business challenges.
+Let's apply this to a challenge.
+Assume you need AI to assess home insurance risk effectively by using real estate images, weather histories, property inspection reports and disaster videos.
+Which Google AI model is best to process these multimodal data? A, Veo. B, Embeddings. C, Imagen.D, Gemini.
+Yes, Gemini is the winner due to its powerful multimodal capabilities.
+Let's now consider some practical challenges.
+While foundation models generally possess broad capabilities, they often lack sufficient training data when confronting problems in specialized fields like health care or finance.
+To address specific challenges, such as generating financial models or providing healthcare consulting, a foundation model can be further trained with new field-specific data sets.
+This process yields a new model precisely tailored to your requirements.
+This leads to the concept of pre-trained and fine-tuned models.
+A foundation model is pre-trained for general purposes using a large data set and then fine-tuned for specific objectives with a much smaller data set.
+Consider K-12 education. After 12 years of foundational learning in reading, writing, and arithmetic, individuals become literate and can solve basic problems. However, to become a professional such as a medical doctor, automotive engineer, or financial advisor, additional specialized training and education are necessary. A similar idea applies to pre-trained versus fine-tuned models.
+Foundation models like Large Language Models, LLM, fall under the category of horizontal AI, given their broad capabilities.
+They address common challenges across industries including content creation-- text, image, audio, video, and code; information synthesis; document abstraction and summarization; and conversation generation, questions and answers.
+Conversely, models fine-tuned for specific industries, like retail, finance, and health care are considered vertical AI solutions.
+These often target industry niches and solve specialized problems such as disease diagnosis.
+In light of these advancements of foundation models like Gemini, how can developers engage with them on Google Cloud and create applications that leverage multimodal capabilities?
+There are three main approaches, each accomplishing the same goal with varying degrees of flexibility.
+Google Cloud Console UI, or User Interface, a no-code solution perfect for exploring and testing prompts;
+Gen AI model Application Programming Interfaces, or APIs, a low-code solution like Gemini APIs, used in conjunction
+with command line tools cURL; predefined Software Development Kits or SDKs, a code-based solution available in languages
+like Python and Java, used with notebooks like Colab and Workbench, and seamlessly integrated into Vertex AI.
+Let's explore how to use AI models with Google in the next few lessons.
