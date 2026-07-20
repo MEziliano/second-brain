@@ -97,4 +97,40 @@ To ensure optimal performance, Vertex AI Studio supports an iterative lifecycle:
 Would you like to explore how to deploy these engineered prompts into production code in the next lesson?
 
 
-## Deploy 
+## Deploy and model tuning
+
+
+*   🚀 **Prompt-to-Production Lifecycle**: Transitioning from prompt design in Vertex AI Studio to integration, deployment, monitoring, and optimization.
+*   💻 **Flexible Deployment**: Vertex AI Studio auto-generates code (Python SDK, cURL API) and integrates with Cloud Run and Cloud Shell, simplifying underlying cloud architecture management.
+*   🔍 **Monitoring & Optimization (Grounding & RAG)**: Ensures accuracy by connecting pre-trained models to trusted, real-time external data sources. *Grounding* is the "what" (the concept), and *RAG* (Retrieval-Augmented Generation) is the "how" (the implementation).
+*   🛠️ **Model Tuning Spectrum**:
+    *   *Prompt Design*: No-code, rapid experimentation without altering model parameters.
+    *   *Parameter-Efficient Tuning (Adapter Tuning)*: Updates a small subset of parameters for efficient domain adaptation.
+    *   *Full Fine-Tuning*: Updates all parameters; requires more compute but yields higher quality for highly complex tasks.
+    *   *Supervised Fine-Tuning*: Uses labeled JSONL datasets (input/output pairs) to teach specific tasks like classification, summarization, or extraction.
+*   ⚙️ **Vertex AI Studio Workflow**: Select "Tuning" → Create a Tuned Model → Upload structured JSONL dataset → Monitor in Google Cloud Console → Deploy or test via the Model Registry.
+*   🧪 **Hands-on Practice**: The lesson concludes with a lab to practice prompt creation, evaluation, management, and multimodal generation with Gemini.
+
+# AI Agents
+* 🔄 **Evolution of Gen AI**: Transitioning from conversational chatbots to AI Agents (which take action) and Agentic AI (autonomous systems coordinating multiple agents for complex, multi-step tasks).
+* 🧠 **The Model (The Brain)**: The reasoning and planning center. It decides what steps are needed to achieve a goal but doesn't act directly on the external world.
+* 🛠️ **The Tools** (Hands, Feet, and Senses): Connectors (like APIs: GET, POST, PATCH) that allow the agent to interact with external systems, execute actions (e.g., sending an email), or fetch real-time information.
+* 🔄 **The Orchestration Layer** (The Nervous System): The cyclical process that manages the sequence of decisions, triggers the tools, and brings the environment's feedback back to the model to inform the next step.
+
+ Model = logic/comprehension; Tools = connection to resources; Orchestration = management of the action sequence.
+
+To build this on Google Cloud, Vertex AI offers frameworks that allow you to connect these three components scalably.
+
+# Agent building with Google Cloud
+
+* 🏗️ **Google's GenAI Agent Architecture**: Spans three layers: Vertex AI Model Garden (foundation models acting as the "brain"), Vertex AI Agent Builder (development layer), and the Application layer (e.g., Gemini Enterprise for no-code business solutions).
+⚖️ **The Core Trade-off**: Tool selection depends on balancing Ease of Use (no-code to pro-code) against Flexibility (minimal configuration to full customization).
+* 🚀 **Gemini Enterprise & NotebookLM**: No-code, secure platforms ideal for business users. NotebookLM acts as a personal research assistant, ingesting specific documents (PDFs, audio, links) to generate grounded summaries, study guides, and even audio podcasts without hallucinating outside the provided context.
+* 🛠️ **Vertex AI Agent Builder**(For Custom Needs):
+   * **Agent Garden**: Pre-built samples and blueprints to accelerate development (low-code starting point).
+    * **Agent Development Kit (ADK)**: Open-source Python framework for maximum control, complex logic, and deep cloud integrations (pro-code).
+    * **Agent Engine**: Fully managed runtime environment for seamless production deployment, scaling, and monitoring.
+* 🗺️ **Strategic Decision Tree**:
+    **Out-of-the-box**: Gemini Enterprise (Best for business users needing ready-to-use solutions).
+    * **Customizable templates**: Agent Garden + Agent Builder (Best for data scientists/analysts tailoring solutions).
+    * **Custom development**: ADK or building from scratch (Best for software/ML engineers requiring high flexibility).
