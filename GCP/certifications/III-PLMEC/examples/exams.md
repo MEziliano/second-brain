@@ -1,15 +1,18 @@
 # Questions
 
-<details><summary>1.  You are training an object detection machine learning model on a dataset that consists of three million X-ray images, each roughly 2 GB in size. You are using Vertex AI Training to run a custom training application on a Compute Engine instance with 32-cores, 128 GB of RAM, and 1 NVIDIA P100 GPU. You notice that model training is taking a very long time. You want to decrease training time without sacrificing model performance. What should you do?</summary>
+<details><summary>1.</summary>
 
-- Increase the instance memory to 512 GB and increase the batch size
-- Enable early stopping in your Vertex AI Training Job
-- Replace the NVIDIA P100 GPU  with a v3-32 TPU  in the training job
-- Use the tf.distribute.Strategy API and run a distributed training job 
+You are training an object detection machine learning model on a dataset that consists of three million X-ray images, each roughly 2 GB in size. You are using Vertex AI Training to run a custom training application on a Compute Engine instance with 32-cores, 128 GB of RAM, and 1 NVIDIA P100 GPU. You notice that model training is taking a very long time. You want to decrease training time without sacrificing model performance. What should you do?
+- A. Increase the instance memory to 512 GB and increase the batch size
+- B. Enable early stopping in your Vertex AI Training Job
+- C. Replace the NVIDIA P100 GPU  with a v3-32 TPU  in the training job
+- D. Use the tf.distribute.Strategy API and run a distributed training job 
 
 <details><summary>ANSWER</summary>
 
-- **B**
+- **D**
+
+> Obs.: 
 </details> </details>
 
 --- 
@@ -567,9 +570,7 @@ Model versioning lets you create multiple versions of the same model. With model
 <details><summary>ANSWER</summary>
 
 - **D**
-
-</details>
-</details>
+</details></details>
 
 ---
 <details><summary>41. You work for a large retailer, and you need to build a model to predict customer churn. The company has a dataset of historical customer data, including customer demographics, purchase history, and website activity. You need to create the model in BigQuery ML and thoroughly evaluate its performance. What should you do?</summary>
@@ -582,6 +583,18 @@ Model versioning lets you create multiple versions of the same model. With model
 <details><summary>ANSWER</summary>
 
 - **D**
+</details></details>
 
-</details>
-</details>
+<details><summary>42. You are building an ML model to detect anomalies in real-time sensor data. You will use Pub/Sub to handle incoming requests. You want to store the results for analytics and visualization. How should you configure the pipeline?</summary>
+
+- A. 1=Dataflow, 2=AI Plataform,  3=BigQuery
+- B. 1=DataProc, 2= AutoML,       3= Cloud Bigtable
+- C. 1=BigQuery, 2=AutoML,        3=Cloud Functions
+- D. 1=BigQuery, 2= AI Plataform, 3= Cloud Storage 
+
+<details><summary>ANSWER</summary>
+
+- **A**
+
+> Obs.: **Dataflow** is a tool design to handle Pub/Sub. 
+</details></details>

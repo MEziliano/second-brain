@@ -64,6 +64,7 @@
 
 >  Unsupervised learning, cluster analysis
 </details></details>
+--- 
 
 # 2. Generative AI
 
