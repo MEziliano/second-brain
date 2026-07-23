@@ -12,11 +12,11 @@ The branches available are:
 <details>
 <summary>Cornell Notes</summary>
 
-| 🗂 **Palavras-Chaves** | 📝 **Anotações** |
-| ---------------------- | ---------------- |
-| • item 1               | Lorem ipsum      |
-| • item 2               | Lorem ipsum      |
-| • item 3               | Lorem ipsum      |
+| 🗂**Palavras-Chaves** | 📝**Anotações** |
+| --------------------------- | ----------------------- |
+| • item 1                   | Lorem ipsum             |
+| • item 2                   | Lorem ipsum             |
+| • item 3                   | Lorem ipsum             |
 
 ---
 
@@ -24,10 +24,10 @@ The branches available are:
 
 > Lorem ipsum.
 
-
 </details>
 
 ---
+
 <details>
 <summary>Questions</summary>
 

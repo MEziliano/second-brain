@@ -135,3 +135,99 @@ $$
     * Problemas de classificação não linearmente separável
     * Aproximar funções não lineares
 * Perceptron multicamadas (PMC)
+
+
+## Aula 03 - Rede Perceptron Multicamadas
+
+### Problemas não lineares
+* Problemas de classificação e estimação
+    * Topologias lineares
+    * Perceptron e Adaline
+* Problemas com topologias mais complexas (não lineares)
+* Rede Perceptron Multicamadas (PMC)
+    * Elementos lineares
+    * Ferramentas de otimização
+    * Compõem estruturas complexas
+* Problema é dividido em várias partes lineaers
+* Resolvido por cada perceptron da PMC
+ 
+ ### Perceptron
+ ![Perceptrom MultiCamadas](.\Docs\images\PMC.png)
+
+ ### Aplicação do ***backpropagation***
+ * **Erro médio quadrático**
+ $$
+E(k)= \frac{1}{2} \sum^{m}_{j=1} (d_j(k) - y_j^{Lm})^2
+ $$
+
+ * **Erro Médio pelo total de amostras:**
+
+ $$
+EQM = \frac{1}{p} \sum^{p}_{k=1} E(k)
+ $$
+
+ *  **Atualizando os pesos da última camada**
+ $$
+W_j^{(Lm)}(t+1) = W_j^{(Lm)}(t) + \eta \delta_j^{(Lm)} y_j^{(LM-1)} \\\delta_J^{(Lm)} = (d_j - y_j^{(LM)})g'(I_j^{(Lm)})
+ $$
+
+ * **Atualizando os pesos das camads intermediárias**
+  $$
+W_j^{(L)}(t+1) = W_j^{(L)}(t) + \eta \delta_j^{(L)} y_j^{(L-1)} \\\delta_J^{(L)} = (d_j - y_j^{(LM)})g'(I_j^{(L)})
+ $$
+
+ * **Atualizando os pesos da primeira camada**
+  $$
+W_j^{(1)}(t+1) = W_j^{(1)}(t) + \eta \delta_j^{(1)}x_i  \\\delta_J^{(L)} = (d_j - y_j^{(LM)})g'(I_j^{(L)})
+ $$
+
+ ### Alogritmo de treinamento do PMC
+
+
+**Início – Fase de treinamento – Rede Perceptron Multicamada:**
+1. Carregar o conjunto de treinamento para a matriz $𝑋$ com a entrada do limiar −1;
+2. Carregar o conjunto de saídas desejadas para o vetor $𝑑$;
+3. Atribuir valores aleatórios e normalizados aos pesos sinápticos $𝑊$ (com o $𝑤$,) de todas as
+camadas da rede;
+4. Escolher o valor da taxa de aprendizado $\eta$ e para o limar de precisão $\epsilon$;
+5. Determine o número máximo de épocas de treinamento $𝑒𝑝𝑜𝑐𝑎_{max}$;
+6. Iniciar o contador de épocas do treinamento (𝑒𝑝𝑜𝑐𝑎 = 0);
+7.  Faça até que $| EQM^{atual} - EQM^{anterior}| \le \epsilon$
+    1. Faça $EQM^{anterior} = EQM^{atual}$
+    2. Para todas as amostras de treinamento $\lbrace X^{(k)}, d^{(k)}$, faça
+        1. Calcular o valor de $I_k^{(1)}$ e $y_i^{(1)}$ para a primeira camada;
+        2. Calcular o valor de $I_k^{(L)}$ e $y_i^{(L)}$ para as camdas intermediárias;
+        3. Calcular o valor de $I_k^{(LM)}$ e $y_i^{(LM)}$ para a última camada;
+        4. Calcular o valor de $\delta_j^{(LM)}$ para a última camada;
+        5. Atualizar o valor de $W_j^{(LM)}$ para a última camada;
+        6. Calcular o valor de $\delta_j^{(L)}$ e atualizar $W_j^{(L)}$ para as camadas intermediárias;
+        7. Calcular o valor de $\delta_j^{(1)}$ para a primeira camada; 
+        8. Atualizar o valor $W_j^{(1)}$ para a primeira camada;
+    3. Calcular o valor de $y_k^{(LM)}$;
+    4. Calcular o erro $EQM^{atual}$;
+    5. Faça $epoca = epoca+1$;
+    6. Se $epoca >_{max}$, pare o treinanmento
+
+### Algoritmo de operação do PMC
+**Início – Fase de operação – Rede Perceptron Multicamada:**
+1. Carregar o vetor de amostra $𝑋$;
+2. Concatenar o valor -1 à matriz X, representando a entrada para o 𝑏𝑖𝑎𝑠;
+3. Carregar o vetor de pesos resultante do treinamento 𝑊 de todas os neurônios e todas as
+camadas;
+4. Calcular o valor de  $I_j^{(1)}$ e $y_j^{(1)}$ para a primeira camada;
+5. Calcular o valor de  $I_j^{(L)}$ e $y_j^{(L)}$ para todas as camadas intermediárias;
+6. Calcular o valor de  $I_j^{(LM)}$ e $y_j^{(LM)}$ para a última camada;
+7. Disponibilizar a saída da rede de acordo com os valores de  $y_j^{(LM)}$ 
+
+### Considerações Finais
+**Algoritmo de backpropagation**
+*  Realiza atualizações nos parâmetros
+*  Dependendo do tamanho do banco de dados e da complexidade da rede
+*  Pode ser lento e custoso computacionalmente
+**Outras configurações de backpropagation e métodos de atualização de parâmetros**
+*  Momentum
+*  Levenberg-Marquardt
+*  Gradiente descendente estocástico
+ **Perceptron multicamadas (PMC)**
+*  Combina funções dos elementos mais simples
+*  Treinamento pode necessitar de refinamento para ser eficiente e com boa generalização

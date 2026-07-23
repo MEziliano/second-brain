@@ -1,18 +1,23 @@
 # Generative AI on Goolge Cloud
-An advanced field that uses foundation models to generate multimodal content—such as text, code, images, speech, and video—and perform autonomous, goal-oriented actions through AI agents.  
+
+An advanced field that uses foundation models to generate multimodal content—such as text, code, images, speech, and video—and perform autonomous, goal-oriented actions through AI agents.
 
 **The Three-Layered Gen AI Stack**
-To help users build their own applications, Google Cloud utilizes a simplified architecture:  
+To help users build their own applications, Google Cloud utilizes a simplified architecture:
+
 * **Foundation Models**: The intelligence layer built on Google’s AI infrastructure that understands language, images, and video.
 * **Gen AI Development**: A suite of tools, including Vertex AI Studio, Agent Builder, and Model Garden, designed to prototype applications, deploy agents, and fine-tune models.
-* **Gen AI Applications**: Products like Gemini Enterprise and NotebookLM that allow business users to build AI agents without needing to code.  
+* **Gen AI Applications**: Products like Gemini Enterprise and NotebookLM that allow business users to build AI agents without needing to code.
 
 **Google’s Gen AI History and Commitment**
-Google has been a central driver of modern generative AI, beginning with the 2017 introduction of the Transformer architecture, which serves as the foundation for modern generative AI applications. This progress continued with the 2023 launch of Gemini, a multimodal model that advanced the concept of Artificial General Intelligence (AGI) through its ability to process diverse data types.  
+Google has been a central driver of modern generative AI, beginning with the 2017 introduction of the Transformer architecture, which serves as the foundation for modern generative AI applications. This progress continued with the 2023 launch of Gemini, a multimodal model that advanced the concept of Artificial General Intelligence (AGI) through its ability to process diverse data types.
 
-# Foundations Models
+Foundations Models
+
 Foundation models serve as the intelligence backbone of Generative AI, trained on vast datasets to learn complex patterns and store information. Google categorizes these models based on their specific utility and capabilities:
+
 ### Google Foundation Model Portfolio
+
 * **Gemini Family:** Ideal for general-purpose, multimodal tasks.
 * **Gemini Pro:** Designed for complex reasoning tasks.
 * **Gemini Flash:** Optimized for speed and low latency in high-volume applications.
@@ -45,9 +50,7 @@ Google provides a suite of tools, with **Vertex AI Studio** serving as the prima
 ### Key Google Cloud Tools for Gen AI
 
 * **Vertex AI Studio:** An intuitive, low-code/no-code environment for prototyping, tuning, and deploying Gen AI applications. It features tools like "Help me write" for AI-assisted prompting and a prompt gallery for exploring examples.
-
 * **Agent Builder & Gemini Enterprise:** Tools designed to design, deploy, and manage intelligent AI agents.
-
 * **NotebookLM:** A specialized tool for AI-powered research and interacting with documents to gain insights.
 
 ### Best Practices for Prompt Engineering
@@ -96,22 +99,21 @@ To ensure optimal performance, Vertex AI Studio supports an iterative lifecycle:
 
 Would you like to explore how to deploy these engineered prompts into production code in the next lesson?
 
-
 ## Deploy and model tuning
 
-
-*   🚀 **Prompt-to-Production Lifecycle**: Transitioning from prompt design in Vertex AI Studio to integration, deployment, monitoring, and optimization.
-*   💻 **Flexible Deployment**: Vertex AI Studio auto-generates code (Python SDK, cURL API) and integrates with Cloud Run and Cloud Shell, simplifying underlying cloud architecture management.
-*   🔍 **Monitoring & Optimization (Grounding & RAG)**: Ensures accuracy by connecting pre-trained models to trusted, real-time external data sources. *Grounding* is the "what" (the concept), and *RAG* (Retrieval-Augmented Generation) is the "how" (the implementation).
-*   🛠️ **Model Tuning Spectrum**:
-    *   *Prompt Design*: No-code, rapid experimentation without altering model parameters.
-    *   *Parameter-Efficient Tuning (Adapter Tuning)*: Updates a small subset of parameters for efficient domain adaptation.
-    *   *Full Fine-Tuning*: Updates all parameters; requires more compute but yields higher quality for highly complex tasks.
-    *   *Supervised Fine-Tuning*: Uses labeled JSONL datasets (input/output pairs) to teach specific tasks like classification, summarization, or extraction.
-*   ⚙️ **Vertex AI Studio Workflow**: Select "Tuning" → Create a Tuned Model → Upload structured JSONL dataset → Monitor in Google Cloud Console → Deploy or test via the Model Registry.
-*   🧪 **Hands-on Practice**: The lesson concludes with a lab to practice prompt creation, evaluation, management, and multimodal generation with Gemini.
+* 🚀 **Prompt-to-Production Lifecycle**: Transitioning from prompt design in Vertex AI Studio to integration, deployment, monitoring, and optimization.
+* 💻 **Flexible Deployment**: Vertex AI Studio auto-generates code (Python SDK, cURL API) and integrates with Cloud Run and Cloud Shell, simplifying underlying cloud architecture management.
+* 🔍 **Monitoring & Optimization (Grounding & RAG)**: Ensures accuracy by connecting pre-trained models to trusted, real-time external data sources. *Grounding* is the "what" (the concept), and *RAG* (Retrieval-Augmented Generation) is the "how" (the implementation).
+* 🛠️ **Model Tuning Spectrum**:
+  * *Prompt Design*: No-code, rapid experimentation without altering model parameters.
+  * *Parameter-Efficient Tuning (Adapter Tuning)*: Updates a small subset of parameters for efficient domain adaptation.
+  * *Full Fine-Tuning*: Updates all parameters; requires more compute but yields higher quality for highly complex tasks.
+  * *Supervised Fine-Tuning*: Uses labeled JSONL datasets (input/output pairs) to teach specific tasks like classification, summarization, or extraction.
+* ⚙️ **Vertex AI Studio Workflow**: Select "Tuning" → Create a Tuned Model → Upload structured JSONL dataset → Monitor in Google Cloud Console → Deploy or test via the Model Registry.
+* 🧪 **Hands-on Practice**: The lesson concludes with a lab to practice prompt creation, evaluation, management, and multimodal generation with Gemini.
 
 # AI Agents
+
 * 🔄 **Evolution of Gen AI**: Transitioning from conversational chatbots to AI Agents (which take action) and Agentic AI (autonomous systems coordinating multiple agents for complex, multi-step tasks).
 * 🧠 **The Model (The Brain)**: The reasoning and planning center. It decides what steps are needed to achieve a goal but doesn't act directly on the external world.
 * 🛠️ **The Tools** (Hands, Feet, and Senses): Connectors (like APIs: GET, POST, PATCH) that allow the agent to interact with external systems, execute actions (e.g., sending an email), or fetch real-time information.
@@ -124,13 +126,13 @@ To build this on Google Cloud, Vertex AI offers frameworks that allow you to con
 # Agent building with Google Cloud
 
 * 🏗️ **Google's GenAI Agent Architecture**: Spans three layers: Vertex AI Model Garden (foundation models acting as the "brain"), Vertex AI Agent Builder (development layer), and the Application layer (e.g., Gemini Enterprise for no-code business solutions).
-⚖️ **The Core Trade-off**: Tool selection depends on balancing Ease of Use (no-code to pro-code) against Flexibility (minimal configuration to full customization).
+  ⚖️ **The Core Trade-off**: Tool selection depends on balancing Ease of Use (no-code to pro-code) against Flexibility (minimal configuration to full customization).
 * 🚀 **Gemini Enterprise & NotebookLM**: No-code, secure platforms ideal for business users. NotebookLM acts as a personal research assistant, ingesting specific documents (PDFs, audio, links) to generate grounded summaries, study guides, and even audio podcasts without hallucinating outside the provided context.
 * 🛠️ **Vertex AI Agent Builder**(For Custom Needs):
-   * **Agent Garden**: Pre-built samples and blueprints to accelerate development (low-code starting point).
-    * **Agent Development Kit (ADK)**: Open-source Python framework for maximum control, complex logic, and deep cloud integrations (pro-code).
-    * **Agent Engine**: Fully managed runtime environment for seamless production deployment, scaling, and monitoring.
+  * **Agent Garden**: Pre-built samples and blueprints to accelerate development (low-code starting point).
+  * **Agent Development Kit (ADK)**: Open-source Python framework for maximum control, complex logic, and deep cloud integrations (pro-code).
+  * **Agent Engine**: Fully managed runtime environment for seamless production deployment, scaling, and monitoring.
 * 🗺️ **Strategic Decision Tree**:
-    **Out-of-the-box**: Gemini Enterprise (Best for business users needing ready-to-use solutions).
-    * **Customizable templates**: Agent Garden + Agent Builder (Best for data scientists/analysts tailoring solutions).
-    * **Custom development**: ADK or building from scratch (Best for software/ML engineers requiring high flexibility).
+  **Out-of-the-box**: Gemini Enterprise (Best for business users needing ready-to-use solutions).
+  * **Customizable templates**: Agent Garden + Agent Builder (Best for data scientists/analysts tailoring solutions).
+  * **Custom development**: ADK or building from scratch (Best for software/ML engineers requiring high flexibility).
