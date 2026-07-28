@@ -67,7 +67,7 @@ $$
 $$
 
 **Realce** obter uma imagem processada para uma aplicação específica, sem regra específica para isso. Sendo o método altamente dependente do problema. Compensando as imperfeições dos sistemas de aquisição e reprodução de imagens.   
-
+<details><summary> Resumo </summary>
 | 🗂  **Palavras-Chaves** | 📝 **Anotações** |
 |-------------------------|------------------|
 | • item 1 | Lorem ipsum  |
@@ -76,7 +76,7 @@ $$
 ---
 ### 📌 Resumo
 > Lorem ipsum.
-
+</details>
 ## Aula 5  -  Filtros
 
 [Vídeo](https://youtu.be/XblyzmymVcw)

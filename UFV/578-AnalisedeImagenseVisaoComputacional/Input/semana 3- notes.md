@@ -13,10 +13,20 @@
 - **AVALIAÇÃO ONLINE 3**
 
 
-## Aula 07 
+## Aula 07 - Cor e Percepção de cores
 
 [VIDEO](https://www.youtube.com/watch?v=FwcUht_EULU&time_continue=2&embeds_referring_euri=https%3A%2F%2Fava.ufv.br%2F&embeds_referring_origin=https%3A%2F%2Fava.ufv.br)
 
+A imagem pode ser representadas de diversas formas. Computacionalmente, sempre através de uma matriz. 
+No olho humano, através das partes específicas dos olhos. Como as córneas, cristalino, retina, íris e o nervo óptico. Na retina, ficam os cones e os bastonetes, que são responsáveis por enxergar as cores. 
+A cor é:
+* Sensação humana de diferentes esprectros de luz.
+* Característicamente perceptaul da espécie humana.
+* Podemos representar a cor usando um número pequeno e finito de sensores. 
+
+A percepção da cor, por meio da computação é feita através da combinação de pexies. Podendo ser por meio de: 
+* Cores aditivas **(RGB)**, onde a soma das cores é igual ao **branco**;
+* Cores subtrativas **(CYMK)**, onde remoção das cores é igual ao **preto**.
 
 ## Aula 08 
 
