@@ -345,13 +345,42 @@ graph LR
 
 
 ### Underfitting e Overfitting
+>  **Underfitting** causado por um ato viés. Modelo falha em capturar a função subjacente $f(x)$. Ou seja, o modelo acaba "cego" para padrões reais.
 
+ > **Overfitting** o modelo "decora" o ruído estocástico do dataset de treino. Ficando hiper-sensível a pequenas flutuações e falhando em ser generalista. 
 
 ### Topologia da Cruva de EQM
+A escolha da função de perda não é apenas uma questão de "medir o erro", ela define a topologia do espaço de otimização que o algoritmo (como o Gradiente Descendente) terá que navegar.
+
+É a média dos quadrados dos resíduos. Topologicamente, cria uma superfície de erro contínua e diferenciável 
 
 ### Arquitetura típica para PMC de regressão
-
+| Hiperparâmetro       | Valores típicos|
+| -------------- | ---------------| 
+| Neurônios de entrada | Um por entrada|
+| Camadas Ocultas       | Depende do problema (1 a 5) |
+| Neurônios por camada | Depende do problema (10 a 100)|
+| Função de ativação das camadas ocultas | ReLu|
+| Neurônios de saídas | Um por dimensão de predição|
+| Função de ativação da camada de saída| Linear, ReLU(se saídas positivas) ou logísticas/tanh (saídas limitadas)|
+| Função de desempenho | EQM ou EQA (ou Huver Loss)|
 
 ### Arquitetura típica para PMC de classificação
-
+| Hiperparâmetro | Classificaçõa binária | Classificação binária Múltipla | Classificação Multiclasse|
+| -------- | --------- | ----------| --------| 
+| Neurônios de entrada | | Um por entrada |  |
+| Camadas Ocultas       |  | Depende do problema (1 a 5) |  |
+| Neurônios por camada | | Depende do problema (10 a 100)|  |
+| Função de ativação das camadas oculta|   | ReLU | |
+| Neurônio de saída | 1 | 1 por rótulo | 1 por classe|
+|Função de ativação da camada de saída | Logística| Logística| Softmax|
+|Função de desempenho | | Cross entropy (log loss)| |   
 #### Consideraçãoes finais
+
+* Treinamento exige estudo do problema
+* Seleção de características como entradas significantes
+* Definição do problema
+* Escolha da estrutura do modelo
+* Treinamento com boas amostras
+* Evitar *underfitting* e *overfitting*
+* Medir o desempenho do modelo
