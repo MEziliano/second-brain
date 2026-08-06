@@ -175,61 +175,41 @@ $$
 * **Erro médio quadrático**
 
 $$
-$
-$$
+
 
 E(k)= \frac{1}{2} \sum^{m}_{j=1} (d_j(k) - y_j^{Lm})^2
 
-$$
-$
 $$
 
 * **Erro Médio pelo total de amostras:**
 
 $$
-$
-$$
-
 EQM = \frac{1}{p} \sum^{p}_{k=1} E(k)
 
-$$
-$
 $$
 
 * **Atualizando os pesos da última camada**
 
 $$
-$
-$$
 
 W_j^{(Lm)}(t+1) = W_j^{(Lm)}(t) + \eta \delta_j^{(Lm)} y_j^{(LM-1)} \\\delta_J^{(Lm)} = (d_j - y_j^{(LM)})g'(I_j^{(Lm)})
 
-$$
-$
 $$
 
 * **Atualizando os pesos das camads intermediárias**
 
 $$
 
-$$
-
 W_j^{(L)}(t+1) = W_j^{(L)}(t) + \eta \delta_j^{(L)} y_j^{(L-1)} \\\delta_J^{(L)} = (d_j - y_j^{(LM)})g'(I_j^{(L)})
 
-$$
-$
 $$
 
 * **Atualizando os pesos da primeira camada**
 
 $$
 
-$$
-
 W_j^{(1)}(t+1) = W_j^{(1)}(t) + \eta \delta_j^{(1)}x_i  \\\delta_J^{(L)} = (d_j - y_j^{(LM)})g'(I_j^{(L)})
 
-$$
-$
 $$
 
 ### Alogritmo de treinamento do PMC
