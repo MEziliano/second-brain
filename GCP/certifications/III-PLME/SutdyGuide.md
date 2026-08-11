@@ -59,7 +59,7 @@ Para cada conceito principal:
 
 7. Dê um exemplo prático de como aplicá-lo ao estudar, trabalhar ou aprender uma nova habilidade.
 
-Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam a construir um mapa mental abrangente do tópico. ```
+Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam a construir um mapa mental abrangente do tópico. ``
 
 ---
 
