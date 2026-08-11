@@ -1,6 +1,6 @@
-# Sugestões do NotebookLM — O Método MIT para Aprender Qualquer Assunto em 90 Minutos
+### Sugestões do NotebookLM — O Método MIT para Aprender Qualquer Assunto em 90 Minutos
 
-# Este guia reúne todas as sugestões usadas no vídeo para transformar o NotebookLM em um sistema de aprendizado.
+**Este guia reúne todas as sugestões usadas no vídeo para transformar o NotebookLM em um sistema de aprendizado.**
 
 A ideia não é pedir resumos.
 
@@ -10,7 +10,7 @@ Você pode usar essas sugestões com qualquer assunto, mas no vídeo, nós as ap
 
 
 
-# Como Usar Estas Instruções
+### Como Usar Estas Instruções
 
 1. Crie um caderno no NotebookLM sobre o tópico que você deseja aprender.
 
@@ -38,9 +38,8 @@ A chave é usá-lo para fazer perguntas melhores, identificar seus erros e estud
 
 # 1. Conceitos Essenciais do Assunto
 
-Esta primeira sugestão ajuda o NotebookLM a fornecer um mapa mental do assunto, em vez de um resumo superficial.
-
-`` Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre [TEMA] — identifique os 5 conceitos essenciais para entender sobre [TEMA].
+``Aja como meu Tutor Socrático Especialista e Examinador Sênior. A partir de agora, vamos estudar o seguinte assunto: [TEMA]
+Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre [TEMA] — identifique os 5 conceitos essenciais para entender sobre [TEMA].
 
 Não quero um resumo de cada fonte. Quero as IDEIAS PRINCIPAIS que fundamentam todo o tópico: os princípios que explicam como o [TEMA] realmente funciona, que um especialista consideraria óbvios, mas que um iniciante normalmente não conseguiria conectar.
 
@@ -68,7 +67,7 @@ Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam
 
 Esta pergunta ajuda você a passar de “Eu reconheço o conceito” para “Eu consigo explicá-lo do zero”.
 
-```
+``
 O que eu realmente preciso entender sobre este material para poder ensiná-lo a alguém que não sabe nada sobre [TEMA]?
 
 Não quero uma explicação superficial. Quero que você identifique as ideias-chave que precisa dominar para explicá-lo claramente do zero.
@@ -79,22 +78,22 @@ Para cada ideia, diga-me:
 
 2. O que costuma ser confundido ou mal explicado?
 
-3. Que exemplo simples eu poderia usar?
+3. Que exemplo simples eu poderia usar? Ou que analogia simples eu poderia usar?
 
 4. O que indicaria que eu ainda não compreendi completamente?
 
 5. Quais recursos no caderno eu devo revisar para aprofundar o assunto?
 
 Priorize o que é mais importante para ensinar o tópico de forma clara, prática e coerente.
-```
+``
 
 ---
 
 # 3. Perguntas que revelam se você apenas memorizou
 Esta instrução transforma o caderno em um teste de compreensão profunda.
 
-```
-Gere 10 perguntas que revelem se alguém realmente entende sobre [TEMA] de acordo ou se apenas memorizou dicas isoladas.
+``
+Gere 5 perguntas que revelem se alguém realmente entende sobre [TEMA] de acordo ou se apenas memorizou dicas isoladas.
 
 As perguntas devem:
 
@@ -108,7 +107,7 @@ As perguntas devem:
 
 5. Ser ordenadas da mais fácil para a mais difícil.
 
-```
+``
 
 ---
 
@@ -117,11 +116,11 @@ As perguntas devem:
 Esta instrução permite que você responda a uma pergunta, erre e deixe o NotebookLM apontar exatamente onde você está com dificuldades.
 
 ``
-Vou responder a esta pergunta. Avalie minha resposta rigorosamente, mas de forma construtiva.
+Vou responder a esta pergunta. Avalie minha resposta rigorosamente, mas de forma construtiva e socrática.
 
-Pergunta: Um estudante universitário memorizou 100 fórmulas de física usando cartões de memorização. Ele respeita os intervalos de repetição espaçados, dorme bem e se lembra de todas elas, mas quando se depara com um problema do mundo real, não sabe qual fórmula aplicar. Por que seu aprendizado falha se ele não construiu uma rede de significado?
+Pergunta: 
 
-Minha resposta: O problema é que ele memorizou as fórmulas, mas não praticou exercícios suficientes com situações reais.
+Minha resposta: 
 
 Diga-me:
 
@@ -129,22 +128,20 @@ Diga-me:
 
 2. Qual parte é superficial?
 
-3. Qual conceito dos cartões de memorização eu não compreendi completamente?
+3. Qual conceito eu não compreendi completamente?
 
 4. Quais fontes específicas eu deveria consultar?
 
 5. Como um especialista no assunto teria respondido?
 
-
+6. Me faça uma nova pergunta de follow-up para testar se corrigi minha lacuna.
 ``
 
 ---
 
 # 5. Crie uma sessão de estudo de 90 minutos
 
-Esta sugestão transforma tudo o que você estudou em uma sessão guiada e prática.
-
-Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie uma sessão de estudo de 90 minutos para que eu entenda melhor como aprender mais rápido de acordo com a neurociência.
+Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie uma sessão de estudo de 90 minutos para que eu entenda melhor como aprender.
 
 Quero que você divida a sessão em blocos de tempo e inclua:
 
