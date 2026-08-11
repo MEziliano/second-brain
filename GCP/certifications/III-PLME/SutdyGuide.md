@@ -40,9 +40,9 @@ A chave é usá-lo para fazer perguntas melhores, identificar seus erros e estud
 
 Esta primeira sugestão ajuda o NotebookLM a fornecer um mapa mental do assunto, em vez de um resumo superficial.
 
-`` Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre memória, sono, atenção, repetição espaçada, recuperação ativa e neuroaprendizagem — identifique os 5 conceitos essenciais para aprender mais rápido de acordo com a neurociência.
+`` Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre [TEMA] — identifique os 5 conceitos essenciais para entender sobre [TEMA].
 
-Não quero um resumo de cada fonte. Quero as IDEIAS PRINCIPAIS que fundamentam todo o tópico: os princípios que explicam como o cérebro realmente aprende, que um especialista consideraria óbvios, mas que um iniciante normalmente não conseguiria conectar.
+Não quero um resumo de cada fonte. Quero as IDEIAS PRINCIPAIS que fundamentam todo o tópico: os princípios que explicam como o [TEMA] realmente funciona, que um especialista consideraria óbvios, mas que um iniciante normalmente não conseguiria conectar.
 
 Para cada conceito principal:
 
@@ -68,8 +68,8 @@ Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam
 
 Esta pergunta ajuda você a passar de “Eu reconheço o conceito” para “Eu consigo explicá-lo do zero”.
 
-``
-O que eu realmente preciso entender sobre este material para poder ensiná-lo a alguém que não sabe nada sobre neurociência ou aprendizagem?
+```
+O que eu realmente preciso entender sobre este material para poder ensiná-lo a alguém que não sabe nada sobre [TEMA]?
 
 Não quero uma explicação superficial. Quero que você identifique as ideias-chave que precisa dominar para explicá-lo claramente do zero.
 
@@ -86,17 +86,15 @@ Para cada ideia, diga-me:
 5. Quais recursos no caderno eu devo revisar para aprofundar o assunto?
 
 Priorize o que é mais importante para ensinar o tópico de forma clara, prática e coerente.
-
 ```
 
 ---
 
 # 3. Perguntas que revelam se você apenas memorizou
-
 Esta instrução transforma o caderno em um teste de compreensão profunda.
 
-``
-Gere 10 perguntas que revelem se alguém realmente entende como aprender mais rápido de acordo com a neurociência ou se apenas memorizou dicas isoladas.
+```
+Gere 10 perguntas que revelem se alguém realmente entende sobre [TEMA] de acordo ou se apenas memorizou dicas isoladas.
 
 As perguntas devem:
 
