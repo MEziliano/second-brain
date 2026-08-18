@@ -1,312 +1,310 @@
-### Sugestões do NotebookLM — O Método MIT para Aprender Qualquer Assunto em 90 Minutos
+### NotebookLM Suggestions — The MIT Method to Learn Qualquer Subject in 90 Minutes
 
-**Este guia reúne todas as sugestões usadas no vídeo para transformar o NotebookLM em um sistema de aprendizado.**
+The idea is not to ask for resumes.
 
-A ideia não é pedir resumos.
+The idea is to build context, identify what is important, test your knowledge, correct your errors and create a review plan.
 
-A ideia é construir contexto, identificar o que é importante, testar seus conhecimentos, corrigir seus erros e criar um plano de revisão.
-
-Você pode usar essas sugestões com qualquer assunto, mas no vídeo, nós as aplicamos a um caderno sobre **como aprender mais rápido de acordo com a neurociência**.
+You can use these suggestions with any subject.
 
 
+### How to Use These Instructions
 
-### Como Usar Estas Instruções
+1. Create a notebook in the NotebookLM on the topic you want to learn.
 
-1. Crie um caderno no NotebookLM sobre o tópico que você deseja aprender.
+2. Load several sources: articles, videos, PDFs, academic papers, annotations or transcriptions.
 
-2. Carregue várias fontes: artigos, vídeos, PDFs, trabalhos acadêmicos, anotações ou transcrições.
+3. It begins as a topic of basic concepts.
 
-3. Comece com o tópico de conceitos básicos.
+4. Continue as a teaching topic.
 
-4. Continue com o tópico de ensino.
+5. Create challenging questions.
 
-5. Elabore perguntas desafiadoras.
-
-6. Responda-as sem consultar as fontes.
+6. Respond without consulting sources.
 
 7. Peça feedback.
 
-8. Crie uma sessão de estudo de 90 minutos.
+8. Create a 90-minute study session.
 
-9. Finalize com um kit de revisão para consolidar seu aprendizado.
+9. Finish with a review kit to consolidate your learning.
 
-A chave não é que o NotebookLM lhe dê as respostas.
+The key is that NotebookLM gives you the answers.
 
-A chave é usá-lo para fazer perguntas melhores, identificar seus erros e estudar de forma mais ativa.
+Use it to ask better questions, identify your mistakes, and study more actively.
 
 --
 
-# 1. Conceitos Essenciais do Assunto
+# 1. Essential Concepts of the Matter
 
-``Aja como meu Tutor Socrático Especialista e Examinador Sênior. A partir de agora, vamos estudar o seguinte assunto: [TEMA]
-Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre [TEMA] — identifique os 5 conceitos essenciais para entender sobre [TEMA].
+``Act as my Specialist Socratic Tutor and Senior Examiner. From now on, we will study the following issue: [TOPIC]
+Based on ALL the sources in this notebook — articles, academic works, videos, guides, PDFs and materials about [TOPIC] — identify the 5 essential concepts to understand about [TOPIC].
 
-Não quero um resumo de cada fonte. Quero as IDEIAS PRINCIPAIS que fundamentam todo o tópico: os princípios que explicam como o [TEMA] realmente funciona, que um especialista consideraria óbvios, mas que um iniciante normalmente não conseguiria conectar.
+I don't want a summary of each source. I want the **MAIN IDEIAS** that underpin everything or topic: the principles that explain how the [TOPIC] really works, that a specialist would consider obvious, but that a beginner would normally not be able to connect.
 
-Para cada conceito principal:
+For each main idea:
 
-1. Nomeie-o com uma frase clara.
+1. Name it with a clear phrase.
 
-2. Explique-o de forma simples, sem jargões técnicos desnecessários.
+2. Explain in simple terms, without unnecessary technical jargon.
 
-3. Explique por que ele é importante para um melhor aprendizado.
+3. Explain why it is important for a better learner.
 
-4. Indique a quais outros conceitos do caderno ele se relaciona.
+4. Indicate which other concepts of the chain it relates to.
 
-5. Cite pelo menos duas fontes do caderno que o apoiam.
+5. Cite pelo fewer duas sources do caderno que o apoiam.
 
-6. Aponte o erro típico que alguém comete quando não entende completamente esse conceito.
+6. Be aware of the typical mistake that someone makes when they do not fully understand this concept.
 
-7. Dê um exemplo prático de como aplicá-lo ao estudar, trabalhar ou aprender uma nova habilidade.
+7. Give a practical example of how you apply it to studying, working or learning a new skill.
 
-Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam a construir um mapa mental abrangente do tópico. ``
-
----
-
-# 2. O que preciso entender para ensinar isso
-
-Esta pergunta ajuda você a passar de “Eu reconheço o conceito” para “Eu consigo explicá-lo do zero”.
-
-``
-O que eu realmente preciso entender sobre este material para poder ensiná-lo a alguém que não sabe nada sobre [TEMA]?
-
-Não quero uma explicação superficial. Quero que você identifique as ideias-chave que precisa dominar para explicá-lo claramente do zero.
-
-Para cada ideia, diga-me:
-
-1. O que eu realmente preciso entender?
-
-2. O que costuma ser confundido ou mal explicado?
-
-3. Que exemplo simples eu poderia usar? Ou que analogia simples eu poderia usar?
-
-4. O que indicaria que eu ainda não compreendi completamente?
-
-5. Quais recursos no caderno eu devo revisar para aprofundar o assunto?
-
-Priorize o que é mais importante para ensinar o tópico de forma clara, prática e coerente.
-``
+Prioritize the ideas that appear repeatedly in various sources and that help build a comprehensive mental map of the topic. ``
 
 ---
 
-# 3. Perguntas que revelam se você apenas memorizou
-Esta instrução transforma o caderno em um teste de compreensão profunda.
+# 2. What do I need to understand to teach this
 
-``
-Gere 5 perguntas que revelem se alguém realmente entende sobre [TEMA] de acordo ou se apenas memorizou dicas isoladas.
+This question helps you go from “I reconize the concept” to “I'm able to explain it”.
 
-As perguntas devem:
+```
+What do I really need to understand about this material to be able to teach it to someone who doesn't know anything about [TOPIC]?
 
-1. Exigir raciocínio, não memorização.
+I don't want a superficial explanation. I want you to identify the key ideas that you need to master to explain them clearly.
 
-2. Conectar conceitos de várias fontes no caderno.
+For each idea, tell me:
 
-3. Incluir situações reais de estudo ou trabalho.
+1. What do I really need to understand?
 
-4. Mostrar exemplos onde conselhos típicos podem falhar.
+2. What does it mean to be confused or poorly explained?
 
-5. Ser ordenadas da mais fácil para a mais difícil.
+3. What simple example could you use? What simple analogy could I use?
 
+4. Or what would indicate that you still did not fully understand?
+
+5. What resources are not available that I should review to delve deeper into the issue?
+
+Prioritize what is most important to teach the topic in a clear, practical and coherent way.
 ``
 
 ---
 
-# 4. Corrija minha resposta como um tutor
-
-Esta instrução permite que você responda a uma pergunta, erre e deixe o NotebookLM apontar exatamente onde você está com dificuldades.
+# 3. Questions that reveal yourself as soon as you memorized
+This instruction transforms the code into a test of deep understanding.
 
 ``
-Vou responder a esta pergunta. Avalie minha resposta rigorosamente, mas de forma construtiva e socrática.
+Ask 5 questions that reveal whether someone really understands [TOPIC] or barely memorizes isolated facts.
 
-Pergunta: 
+These questions we must:
 
-Minha resposta: 
+1. Demand reasoning, not memorization.
 
-Diga-me:
+2. Connect concepts from various sources online.
 
-1. Qual parte da minha resposta está correta?
+3. Include real study or work situations.
 
-2. Qual parte é superficial?
+4. Show examples where typical advice can be wrong.
 
-3. Qual conceito eu não compreendi completamente?
-
-4. Quais fontes específicas eu deveria consultar?
-
-5. Como um especialista no assunto teria respondido?
-
-6. Me faça uma nova pergunta de follow-up para testar se corrigi minha lacuna.
-``
-
----
-
-# 5. Crie uma sessão de estudo de 90 minutos
-
-Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie uma sessão de estudo de 90 minutos para que eu entenda melhor como aprender.
-
-Quero que você divida a sessão em blocos de tempo e inclua:
-
-1. O que devo estudar em cada bloco.
-
-2. Que pergunta devo responder.
-
-3. Qual recurso devo consultar se tiver alguma dúvida.
-
-4. Qual resultado devo alcançar ao final de cada bloco.
-
-5. O que devo fazer nos últimos 10 minutos para concluir a sessão de forma eficaz.
-
----
-
-# 6. Kit de Revisão para Consolidar o Aprendizado
-
-Esta tarefa visa finalizar com material de revisão prático, sem precisar reler todo o caderno do zero.
-
-Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie um kit de revisão para consolidar este tópico.
-
-Quero que ele inclua:
-
-1. U1. Uma folha de estudo de uma página com as ideias principais.
-
-2. Uma tabela com erros comuns e como corrigi-los.
-
-3. Dez questões de revisão ordenadas por dificuldade.
-
-4. Um plano de revisão para os próximos 7 dias.
-
-5. Fontes específicas que devo consultar se tiver dúvidas.
-
-Torne-o prático, claro e projetado para revisão sem precisar reler todo o caderno do zero.
+5. Being organized makes it easier to make it more difficult.
 
 ``
 
 ---
 
-# Extra 1. Adapte o método a qualquer assunto
+# 4. Correct my answers like a tutor
 
-Você pode usar esta instrução se quiser aplicar o mesmo sistema a outro caderno.
+This instruction allows you to respond to a question, make a mistake, or NotebookLM to determine exactly where you are having difficulties.
 
 ``
-Quero usar este caderno para aprender [TÓPICO].
+Vou answer this question. Avalie minha responds rigorously, but in a constructive and Socratic way.
 
-Não quero que você resuma as fontes para mim.
+Question:
 
-Quero que você me ajude a construir um sistema de aprendizado completo.
+Minha answers:
 
-Primeiro, identifique as ideias centrais do tópico.
+Tell me:
 
-Em seguida, diga-me o que eu preciso entender para poder explicá-lo a alguém do zero.
+1. Which part of the answer is correct?
 
-Em seguida, elabore perguntas que revelem se eu apenas memorizei as informações ou se realmente as compreendi.
+2. Which part is superficial?
 
-E, por fim, proponha uma sessão de estudo de 90 minutos para que eu trabalhe ativamente nisso.
+3. What concept did I not fully understand?
 
-Use apenas os recursos deste caderno e cite fontes específicas quando necessário.
+4. What specific sources should I consult?
+
+5. As a specialist, the issue has not been answered?
+
+6. I have a new follow-up question to test if I correct myself.
+``
+
+---
+
+#5. Create a 90-minute study session
+
+Using everything we cover in this conversation and all the resources of this computer, create a 90-minute study session so that you better understand how to learn.
+
+I want you to divide the session into time blocks and include:
+
+1. Or that I must study in each block.
+
+2. What question should I answer?
+
+3. What resource should I consult if I have any doubts?
+
+4. What result should I achieve at the end of each block.
+
+5. What should I do for the last 10 minutes to conclude?
+
+essão effectively.
+
+---
+
+#6. Review Kit to Consolidate or Learn
+
+This task is intended to be completed with practical review material, without needing to reread everything from scratch.
+
+Using everything we covered in this discussion and all the resources in this notebook, I created a review kit to consolidate this topic.
+
+I want it to include:
+
+1.U1. A study sheet on a page with the main ideas.
+
+2. A table of common errors and how to correct them.
+
+3. Ten review quests ordered by difficulty.
+
+4. A review plan for the next 7 days.
+
+5. Specific sources that I should consult if they are dubious.
+
+Practical, clear and designed lathe for inspection without needing to read everything from zero.
+
+``
+
+---
+
+# Extra 1. Adapt the method to any subject
+
+You can use this instruction if you want to apply the same system to another computer.
+
+``
+I want to use this computer to learn [TOPIC].
+
+I don't want you to summarize the sources for me.
+
+I want you to help me build a complete learning system.
+
+First, identify the central ideas of the topic.
+
+Next, tell me what I need to understand in order to explain it to someone else.
+
+Next, ask questions that reveal whether you have barely memorized the information or have really understood it.
+
+And finally, propose a 90-minute study session so that you can work actively.
+
+Use only the resources in this toolkit and cite specific sources when necessary.
 
 
 
 ---
 
-# Extra 2. Identifique minhas lacunas após o estudo
+# Extra 2. Identify my lacunas após o estudo
 
-Use esta instrução depois que eu tiver respondido a várias perguntas.
+Use this instruction after you have answered several questions.
 
-Com base nas minhas respostas anteriores e em todos os recursos do caderno, identifique minhas principais lacunas de compreensão.
+Based on the previous answers and all your computer resources, identify the main gaps in understanding.
 
-Quero que você me diga:
+I want you to tell me:
 
-1. Quais conceitos eu ainda compreendo apenas superficialmente.
+1. Quais conceitos eu ainda understand barely superficially.
 
-2. Quais erros de raciocínio estou repetindo.
+2. Quais errors of reason are being repeated.
 
-3. Quais recursos específicos eu devo revisar.
+3. What specific resources should I review?
 
-4. Em que ordem eu devo estudar esses recursos.
+4. In what order should I study these resources.
 
-5. Qual exercício ou questão eu devo responder em seguida para verificar meu progresso.
+5. What exercise or question must I answer immediately to verify my progress.
 
-Seja direto, específico e útil.
+Be direct, specific and helpful.
 
 ``
 
 ---
 
-# Extra 3. Técnica de Feynman com Correção
+# Extra 3. Feynman technique with Correção
 
-Esta atividade consiste em explicar um conceito com suas próprias palavras e receber feedback.
+This activity consists of explaining a concept with your own words and receiving feedback.
 
-"Vou tentar explicar este conceito como se estivesse explicando para alguém que não sabe nada sobre o assunto.
+"You will try to explain this concept as you are trying to explain it to someone who knows nothing about the subject.
 
-Conceito: [ESCREVA O CONCEITO AQUI]
+Conceito: [SCREVA OR CONCEITO HERE]
 
-Minha explicação:
+Minha explanation:
 
-[COLE SUA EXPLICAÇÃO AQUI]
+[COLE SUA EXPLICAÇÃO HERE]
 
-Avalie minha explicação.
+Please check the explanation.
 
-Diga-me:
+Tell me:
 
-1. Qual parte está clara?
+1. Which part is clear?
 
-2. Qual parte está incompleta?
+2. Which part is incomplete?
 
-3. O que eu simplifiquei demais?
+3. Or do you simplify too much?
 
-4. Qual erro conceitual estou cometendo?
+4. What conceptual error am I making?
 
-5. Que analogia ou exemplo eu poderia usar para explicar melhor?
+5. What analogy or example could you use to explain better?
 
-6. Quais fontes no caderno eu devo revisar para melhorar minha explicação?
+6. Which fonts are missing and should I review them for better explanation?
 
 "
 
 ---
 
-# Extra 4. Transforme o caderno em um plano de aprendizado semanal
+# Extra 4. Transform the notebook into a weekly learning plan
 
-Usando todas as fontes neste caderno, crie um plano de aprendizado de 7 dias para que eu entenda este tópico do zero.
+Using all of them sources in this caderno, created a 7-day learning plan so that you understand this topic from zero.
 
-Para cada dia, inclua:
+For each day, include:
 
-1. O que eu devo estudar.
+1. Or what I should study.
 
-2. Qual fonte específica eu devo revisar.
+2. What specific source should I check?
 
-3. Qual pergunta eu devo fazer?" Respondo sem consultar minhas anotações?
+3. What question should I ask?" I answer without consulting my notes?
 
-4. Que exercício prático devo fazer?
+4. What practical exercise should I do?
 
-5. Que sinal indicaria que compreendi bem esta parte?
+5. What sign would indicate that you understood this part?
 
-O plano deve ser elaborado para aprendizagem ativa, não para leitura passiva.
+The plan must be prepared for active learning, not for passive reading.
 
 ``
 
 ---
 
-# Extra 5. Resumo Visual do Tópico
+# Extra 5. Visual Summary of Topics
 
 ```
 
-Crie um mapa visual do tópico usando os recursos deste caderno.
+Create a visual map of the topic using the resources in this journal.
 
-Quero que você organize as informações da seguinte forma:
+I want you to organize the information in the following way:
 
-1. Ideia central do tópico.
+1. Central idea of ​​the topic.
 
-2. Conceitos principais.
+2. Main concepts.
 
-3. Como eles se conectam.
+3. How they connect.
 
-4. Erros de compreensão típicos.
+4. Typical understanding errors.
 
-5. Exemplos práticos.
+5. Practical examples.
 
-6. Perguntas que devo ser capaz de responder se realmente entendi.
+6. Questions I should be able to really answer understood.
 
-Faça isso em um formato de tópicos claro, fácil de converter em um infográfico ou mapa mental.
+This is a clear topic format, easy to convert into an infographic or mind map.
 
 ```
 
 ---
-
