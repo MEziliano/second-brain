@@ -15,3 +15,4 @@
 [AULA PRATICA]()
 ----
 ## Aula 03 - Máquina de Vetor de suporte Não linear e função Kernel
+[VIDEO AULA](https://drive.google.com/file/d/1iqm04UoWgGq1iaz5brNuoh6cavPv0bSe/view)
