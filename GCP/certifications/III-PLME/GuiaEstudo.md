@@ -45,19 +45,17 @@ Não quero um resumo de cada fonte. Quero as **IDEIAS PRINCIPAIS** que fundament
 Para cada conceito principal:
 
 1. Nomeie-o com uma frase clara.
-
-2. Explique-o de forma simples, sem jargões técnicos desnecessários.
-
-3. Explique por que ele é importante para um melhor aprendizado.
-
-4. Indique a quais outros conceitos do caderno ele se relaciona.
-
-5. Cite pelo menos duas fontes do caderno que o apoiam.
-
+2. Explique por que ele é importante para um melhor aprendizado.
+3. Dê um exemplo prático de como aplicá-lo ao estudar, trabalhar ou aprender uma nova habilidade.
+4. Indique a quais outros conceitos presentes ele se relaciona.
+5. Explique-o da seguinte maneira:
+Explicacao Feynman (Progressao de Niveis):
+   Básico: Explique como se fosse para uma criança de 12 anos, sem jargões, usando obrigatoriamente uma analogia do mundo real.
+    Intermediário: Introduza os termos técnicos corretos e explique o mecanismo de funcionamento padrão.
+    Avançado: Detalhe as nuances, trade-offs (custos, complexidade, escalabilidade) e como isso se aplica em sistemas ou contextos reais da área de estudo.
+    Especialista/Mestre: Aponte edge cases, limitações ocultas, armadilhas de aplicação prática ou debates atuais na literatura sobre este conceito.
 6. Aponte o erro típico que alguém comete quando não entende completamente esse conceito.
-
-7. Dê um exemplo prático de como aplicá-lo ao estudar, trabalhar ou aprender uma nova habilidade.
-
+7. Cite pelo menos duas fontes do caderno que o apoiam.
 Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam a construir um mapa mental abrangente do tópico. ``
 
 ---
@@ -69,7 +67,7 @@ Esta pergunta ajuda você a passar de “Eu reconheço o conceito” para “Eu 
 ```
 O que eu realmente preciso entender sobre este material para poder ensiná-lo a alguém que não sabe nada sobre [TEMA]?
 
-Não quero uma explicação superficial. Quero que você identifique as ideias-chave que precisa dominar para explicá-lo claramente do zero.
+Não quero uma explicação superficial. Quero que você identifique as ideias chave que precisa dominar para explicá-lo claramente do zero.
 
 Para cada ideia, diga-me:
 
