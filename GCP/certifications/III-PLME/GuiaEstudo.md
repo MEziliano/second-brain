@@ -29,15 +29,13 @@ Você pode usar essas sugestões com qualquer assunto.
 
 9. Finalize com um kit de revisão para consolidar seu aprendizado.
 
-A chave não é que o NotebookLM lhe dê as respostas.
+A chave não é que o NotebookLM lhe dê as respostas. A chave é usá-lo para fazer perguntas melhores, identificar seus erros e estudar de forma mais ativa.
 
-A chave é usá-lo para fazer perguntas melhores, identificar seus erros e estudar de forma mais ativa.
-
---
+---
 
 # 1. Conceitos Essenciais do Assunto
 
-``Aja como meu Tutor Socrático Especialista e Examinador Sênior. A partir de agora, vamos estudar o seguinte assunto: [TEMA]
+Aja como meu Tutor Socrático Especialista e Examinador Sênior. A partir de agora, vamos estudar o seguinte assunto: [TEMA]
 Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre [TEMA] — identifique os 5 conceitos essenciais para entender sobre [TEMA].
 
 Não quero um resumo de cada fonte. Quero as **IDEIAS PRINCIPAIS** que fundamentam todo o tópico: os princípios que explicam como o [TEMA] realmente funciona, que um especialista consideraria óbvios, mas que um iniciante normalmente não conseguiria conectar.
@@ -56,55 +54,43 @@ Explicacao Feynman (Progressao de Niveis):
     Especialista/Mestre: Aponte edge cases, limitações ocultas, armadilhas de aplicação prática ou debates atuais na literatura sobre este conceito.
 6. Aponte o erro típico que alguém comete quando não entende completamente esse conceito.
 7. Cite pelo menos duas fontes do caderno que o apoiam.
-Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam a construir um mapa mental abrangente do tópico. ``
+Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam a construir um mapa mental abrangente do tópico.
 
 ---
 
 # 2. O que preciso entender para ensinar isso
 
-Esta pergunta ajuda você a passar de “Eu reconheço o conceito” para “Eu consigo explicá-lo do zero”.
+Esta pergunta ajuda você a passar de "Eu reconheço o conceito" para "Eu consigo explicá-lo do zero".
 
-```
 O que eu realmente preciso entender sobre este material para poder ensiná-lo a alguém que não sabe nada sobre [TEMA]?
-
 Não quero uma explicação superficial. Quero que você identifique as ideias chave que precisa dominar para explicá-lo claramente do zero.
 
 Para cada ideia, diga-me:
 
 1. O que eu realmente preciso entender?
-
 2. O que costuma ser confundido ou mal explicado?
-
 3. Que exemplo simples eu poderia usar? Ou que analogia simples eu poderia usar?
-
 4. O que indicaria que eu ainda não compreendi completamente?
-
 5. Quais recursos no caderno eu devo revisar para aprofundar o assunto?
 
 Priorize o que é mais importante para ensinar o tópico de forma clara, prática e coerente.
-``
+
 
 ---
 
 # 3. Perguntas que revelam se você apenas memorizou
 Esta instrução transforma o caderno em um teste de compreensão profunda.
 
-``
-Gere 5 perguntas que revelem se alguém realmente entende sobre [TEMA] de acordo ou se apenas memorizou dicas isoladas.
 
+Gere 5 perguntas que revelem se alguém realmente entende sobre [TEMA] de acordo ou se apenas memorizou dicas isoladas.
 As perguntas devem:
 
 1. Exigir raciocínio, não memorização.
-
 2. Conectar conceitos de várias fontes no caderno.
-
 3. Incluir situações reais de estudo ou trabalho.
-
 4. Mostrar exemplos onde conselhos típicos podem falhar.
-
 5. Ser ordenadas da mais fácil para a mais difícil.
 
-``
 
 ---
 
@@ -162,7 +148,7 @@ Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, cr
 
 Quero que ele inclua:
 
-1. U1. Uma folha de estudo de uma página com as ideias principais.
+1. Uma folha de estudo de uma página com as ideias principais.
 
 2. Uma tabela com erros comuns e como corrigi-los.
 
