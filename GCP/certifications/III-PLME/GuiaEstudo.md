@@ -33,7 +33,25 @@ A chave não é que o NotebookLM lhe dê as respostas. A chave é usá-lo para f
 
 ---
 
-# 1. Conceitos Essenciais do Assunto
+# 1. Fundação e Intuição Básica
+
+Aja como meu Tutor Socrático Especialista em Didática. Estou começando a estudar o tópico: **[INSERIR TEMA]**.
+Antes de entrarmos em detalhes técnicos, complexidade ou profundidade, preciso construir uma intuição sólida e simples. Por favor, responda seguindo estritamente esta estrutura:
+
+1. **A Grande Ideia (Analogia)**: Explique o conceito central como se eu tivesse 12 anos, usando apenas uma analogia do mundo real. Zero jargões técnicos.
+2. **Vocabulário de Sobrevivência**: Liste no máximo 3 a 5 termos técnicos absolutamente essenciais que preciso conhecer para não me perder nas leituras, com definições de uma única frase cada.
+3. **O Problema que ele Resolve (e o que ele NÃO é)**: Qual é a "dor", o caos ou a ineficiência que existia antes dessa solução? Por que alguém se deu ao trabalho de criar isso? E, em uma frase curta, o que esse conceito não é (para evitar confusões comuns de iniciantes).
+4. **Raízes e Pioneiros**:
+    * Etimologia: Qual a origem da palavra ou termo (se relevante e interessante)?
+    * Cronologia Breve: Uma linha do tempo de 2 a 3 marcos principais de como essa ideia evoluiu.
+    * Pensadores Chave: 1 ou 2 nomes de pioneiros, cientistas ou engenheiros que moldaram esse conceito e qual foi sua contribuição central.
+4. **Pergunta Socrática de Intuição**: Faça-me uma pergunta conceitual simples, baseada na analogia do item 1 ou no problema do item 3, para verificar se capturei a essência. Não exija conhecimento técnico na resposta.
+5. **Sinal de Pronto**: Diga-me qual é o 'sinal' prático de que entendi o básico e estou pronto para avançar para os prompts de profundidade (como o de Conceitos Essenciais) do meu Guia de Estudo.
+
+* **Regra de Ouro**: Não avance para trade-offs, arquitetura complexa ou detalhes de implementação nesta resposta. Mantenha o foco 100% na intuição pura e no propósito."
+
+
+# 2. Conceitos Essenciais do Assunto
 
 Aja como meu Tutor Socrático Especialista e Examinador Sênior. A partir de agora, vamos estudar o seguinte assunto: [TEMA]
 Com base em TODAS as fontes neste caderno — artigos, trabalhos acadêmicos, vídeos, guias, PDFs e materiais sobre [TEMA] — identifique os 5 conceitos essenciais para entender sobre [TEMA].
@@ -58,7 +76,7 @@ Priorize os conceitos que aparecem repetidamente em diversas fontes e que ajudam
 
 ---
 
-# 2. O que preciso entender para ensinar isso
+# 3. O que preciso entender para ensinar isso
 
 Esta pergunta ajuda você a passar de "Eu reconheço o conceito" para "Eu consigo explicá-lo do zero".
 
@@ -73,12 +91,12 @@ Para cada ideia, diga-me:
 4. O que indicaria que eu ainda não compreendi completamente?
 5. Quais recursos no caderno eu devo revisar para aprofundar o assunto?
 
-Priorize o que é mais importante para ensinar o tópico de forma clara, prática e coerente.
+Priorize o que é mais importante para entender, dominar e ensinar o tópico de forma clara, prática e coerente.
 
 
 ---
 
-# 3. Perguntas que revelam se você apenas memorizou
+# 4. Perguntas que revelam se você apenas memorizou
 Esta instrução transforma o caderno em um teste de compreensão profunda.
 
 
@@ -94,7 +112,7 @@ As perguntas devem:
 
 ---
 
-# 4. Corrija minha resposta como um tutor
+# 5. Corrija minha resposta como um tutor
 
 Esta instrução permite que você responda a uma pergunta, erre e deixe o NotebookLM apontar exatamente onde você está com dificuldades.
 
@@ -122,7 +140,7 @@ Diga-me:
 
 ---
 
-# 5. Crie uma sessão de estudo de 90 minutos
+# 6. Crie uma sessão de estudo de 90 minutos
 
 Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie uma sessão de estudo de 90 minutos para que eu entenda melhor como aprender.
 
@@ -140,7 +158,7 @@ Quero que você divida a sessão em blocos de tempo e inclua:
 
 ---
 
-# 6. Kit de Revisão para Consolidar o Aprendizado
+# 7. Kit de Revisão para Consolidar o Aprendizado
 
 Esta tarefa visa finalizar com material de revisão prático, sem precisar reler todo o caderno do zero.
 
