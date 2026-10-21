@@ -142,7 +142,7 @@ Diga-me:
 
 # 6. Crie uma sessão de estudo de 90 minutos
 
-Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie uma sessão de estudo de 90 minutos para que eu entenda melhor como aprender.
+Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, crie uma sessão de estudo de 90 minutos para que eu entenda melhor como aprender [TEMA].
 
 Quero que você divida a sessão em blocos de tempo e inclua:
 
@@ -202,7 +202,6 @@ Em seguida, elabore perguntas que revelem se eu apenas memorizei as informaçõe
 E, por fim, proponha uma sessão de estudo de 90 minutos para que eu trabalhe ativamente nisso.
 
 Use apenas os recursos deste caderno e cite fontes específicas quando necessário.
-
 
 
 ---

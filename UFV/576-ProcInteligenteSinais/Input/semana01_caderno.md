@@ -250,12 +250,8 @@ Não saber explicar por que um filtro Chebyshev é preferível quando se busca c
 #### 1. Qual parte da sua resposta está correta?
 Você acertou ao perceber que a presença de um **offset/bias** (o termo constante $(+3\text{ V}$)) cria uma inconsistência em relação às regras fundamentais dos sistemas lineares e que o sistema não se comporta como um sistema estritamente linear.
 
----
-
 #### 2. Qual parte é superficial?
 A sua resposta assumiu a priori que o sistema era LIT (*"levando em consideração que se trata de um sistema LIT"*), quando o próprio objetivo da questão era testar **se o sistema é ou não linear**. Além disso, a resposta ficou no campo abstrato, sem realizar o teste numérico simples que provaria o comportamento da saída ao dobrar a entrada.
-
----
 
 #### 3. Qual conceito você não compreendeu completamente?
 O ponto crítico da sua lacuna foi afirmar que *"sistemas com offset ou bias respeitam o princípio da homogeneidade, mas quebrariam a aditividade"*. **Isso está incorreto: um termo de offset viola AMBAS as propriedades (Homogeneidade E Aditividade).**
@@ -271,8 +267,6 @@ O ponto crítico da sua lacuna foi afirmar que *"sistemas com offset ou bias res
   * A soma das entradas $(x_1(t) + x_2(t) = 2\text{ V}$) gera a saída $(y_3(t) = 7\text{ V}$).
   * Porém, a soma das saídas individuais seria $(y_1(t) + y_2(t) = 5\text{ V} + 5\text{ V} = 10\text{ V}$). Como $(7\text{ V} \neq 10\text{ V}$), **a aditividade também é violada**.
 
----
-
 #### 4. Quais fontes específicas você deveria consultar?
 * **Apostila ELT 576 Atualizada.pdf:**
   * **Capítulo 2.1.2 (*Sistemas Lineares*)**, páginas 24–25: Veja as definições formais de aditividade e homogeneidade e o **Exemplo 2.2**, que demonstra formalmente a verificação de linearidade.
@@ -281,7 +275,6 @@ O ponto crítico da sua lacuna foi afirmar que *"sistemas com offset ou bias res
 * **Artefatos do Studio:**
   * O aplicativo **"Sistemas Mapa"** (que conecta linearidade, aditividade e homogeneidade) e o quiz **"Sinais Quiz"**.
 
----
 
 #### 5. Como um especialista no assunto teria respondido?
 
@@ -290,7 +283,6 @@ O ponto crítico da sua lacuna foi afirmar que *"sistemas com offset ou bias res
 > Embora o gráfico de $(y$) em função de $(x$) seja uma reta na geometria analítica básica ($(y = ax + b$)), o sistema viola o **Princípio da Superposição**. 
 > 
 > Se aplicarmos uma entrada $(x_1(t) = 1\text{ V}$), a saída será $(y_1(t) = 5\text{ V}$). Ao dobrarmos a entrada para $(x_2(t) = 2\text{ V}$), a saída passa a ser $(y_2(t) = 7\text{ V}$), o que não corresponde ao dobro da saída anterior ($(10\text{ V}$)). Isso prova que o sistema **viola a homogeneidade**. Além disso, uma entrada nula ($(x(t) = 0$)) produz saída de $(3\text{ V} \neq 0$), o que é impossível em um sistema estritamente linear. Sistemas com esta característica são classificados como *incrementalmente lineares* ou não lineares."
-
 
 ---
 
@@ -308,15 +300,11 @@ Avaliando sua resposta com o mesmo rigor construtivo e socrático da questão an
 #### 1. Qual parte da sua resposta está correta?
 Você acertou ao identificar a **intuição central de que a afirmação da questão confunde o modelo teórico com a prática**. Você percebeu que uma onda pura estendida no tempo infinito possui consumo/potência constante, enquanto na prática temos apenas uma fração delimitada no tempo.
 
----
-
 #### 2. Qual parte é superficial ou incorreta?
 A sua resposta falhou no ponto principal da física e da matemática do sinal:
 
 * **Afirmar que *"não é possível calcular a energia total dessa gravação"***: **Isso está incorreto.** Para uma gravação de 10 minutos (um intervalo de tempo finito $([0, T_0]$)), a integral do quadrado do sinal não diverge; ela resulta em um número real e finito. Por isso, a energia total desses 10 minutos **pode sim ser calculada**.
 * **Usar a justificativa *"pois teríamos apenas uma amostra do total"***: A palavra "amostra" é imprecisa nesse contexto. O que ocorre não é amostragem pontual, mas sim um **janelamento temporal** (truncamento do sinal infinito para um intervalo limitado de 10 minutos).
-
----
 
 #### 3. Qual conceito você não compreendeu completamente?
 Você não compreendeu como o **corte temporal (janelamento) altera a própria classe matemática do sinal**:
@@ -326,14 +314,11 @@ Você não compreendeu como o **corte temporal (janelamento) altera a própria c
    $[E_{10min} = \int_{0}^{600} |\cos(\omega_0 t)|^2 dt < \infty$]
    Ao delimitar o sinal no tempo, a gravação de 10 minutos deixa de ser um sinal de potência e passa a pertencer estritamente à **classe dos sinais de energia** (energia total finita $(E_\infty < \infty$) e potência média ao longo de todo o tempo infinito $(P_\infty = 0$)).
 
----
-
 #### 4. Quais fontes específicas você deveria consultar?
 * **Apostila ELT 576 Atualizada.pdf:**
   * **Capítulo 1.6 (*Energia e Potência de Sinais*)**, páginas 19–20: Equação 1.3 (Energia), Equação 1.4 (Potência) e o **Exemplo 1.4**, que demonstra passo a passo por que a integral de energia diverge para o cosseno infinito.
 * **ELT 576.pdf:**
   * **Seção 1 (*Sinais de Energia e Sinais de Potência*)**, páginas 10–12: As definições formais das 3 classes de sinais e a prova de que sinais de duração finita pertencem à 1ª Classe (Sinais de Energia).
----
 
 #### 5. Como um especialista no assunto teria respondido?
 
@@ -343,7 +328,6 @@ Você não compreendeu como o **corte temporal (janelamento) altera a própria c
 > 
 > Quando calculamos a integral do quadrado da tensão durante esse intervalo finito de 10 minutos, a integral converge para um valor finito (em Joules normalizados). Portanto, a gravação de 10 minutos é classificada como um **sinal de energia** (energia total finita $(E_\infty < \infty$) e potência média temporal nula $(P_\infty = 0$)), sendo perfeitamente possível calcular sua energia total."
 
-
 ---
 
 ### 3. Nível Avançado: O Tamanho do Buffer na Convolução Discreta
@@ -352,6 +336,40 @@ Você não compreendeu como o **corte temporal (janelamento) altera a própria c
 * **O Desafio de Raciocínio:** O que acontecerá com o som do plugin ao usar esse tamanho de vetor? O que o "espalhamento" da convolução no tempo representa fisicamente em termos da memória do sistema?
 * **O Conceito por Trás da Resposta:** A convolução discreta de dois sinais de tamanhos finitos $(N_1$) e $(N_2$) resulta em um sinal de saída com duração total de **$(N_{out} = N_1 + N_2 - 1$)** amostras. No exemplo, a saída precisa de $(1000 + 500 - 1 = 1499$) posições. As $(499$) amostras adicionais representam a **memória e a cauda de reverberação do sistema** (o tempo que a energia leva para decair). Alocar apenas $(1000$) posições corta abruptamente o eco da catedral, gerando estalos numéricos e descontinuidade temporal.
 
+> Minha resposta: Ao tentar utilizar essa técnica em específico o desenvolvedor perderá informações sobre suas amostras através da convolução
+
+---
+
+#### 1. Qual parte da sua resposta está correta?
+Você acertou na **intuição de que haverá perda indesejada de informação** e truncamento do sinal resultante ao tentar armazenar o resultado da convolução em um vetor menor do que o necessário.
+
+#### 2. Qual parte é superficial?
+A afirmação de que o desenvolvedor *"perderá informações sobre suas amostras através da convolução"* é genérica. Ela não explica **o que exatamente é perdido** (a cauda de reverberação do áudio), **por que ocorre a perda** (o tamanho correto do vetor de saída deveria ser maior que o de entrada) e **qual é a consequência prática no sinal de áudio** (estalos numéricos e corte seco do efeito de eco).
+
+#### 3. Qual conceito você não compreendeu completamente?
+Você não aplicou a regra matemática da **duração temporal da convolução discreta** nem o conceito de **memória do sistema**:
+
+1. **Regra da Duração da Convolução:** A convolução entre dois sinais discretos de durações finitas $(N_1$) e $(N_2$) resulta em um sinal de saída com duração total de exatamente **$(N_{out} = N_1 + N_2 - 1$)** amostras. No cenário do problema, com $(N_1 = 1000$) e $(N_2 = 500$), a saída precisa de $(1000 + 500 - 1 = 1499$) posições.
+2. **Memória e Tempo de Acomodação:** A convolução "espalha" o sinal no tempo porque a resposta ao impulso $(h[n]$) representa a memória do sistema. As $(499$) amostras adicionais (da posição 1000 a 1499) contêm a **cauda de decaimento do eco (reverberação)**.
+3. **Efeito do Buffer Insuficiente:** Ao alocar um vetor de apenas 1000 posições, o algoritmo descarta ou sobrescreve as últimas 499 amostras de saída. O ouvinte perceberá um corte abrupto e artificial na reverberação, gerando descontinuidade e estalos (*clicks/pops*) no áudio.
+
+#### 4. Quais fontes específicas você deveria consultar?
+* **Apostila ELT 576 Atualizada.pdf:**
+  * **Capítulo 3.1.2 (*A resposta ao impulso unitário discreto no tempo e a resposta da soma de convolução*)**, páginas 30–32.
+  * **Exemplo 3.1**, páginas 33–35: Observe como o vetor de entrada $(x[n]$) e o filtro $(h[n]$) se combinam gerando um vetor de saída $(y[n]$) com mais amostras do que as entradas originais.
+* **ELT 576.pdf:**
+  * **Capítulo 3.1.2 (*Soma de Convolução*)**, páginas 24–25 e a discussão sobre **Memória de Sistemas** na Seção 2.2.
+* **Artefatos do Studio:**
+  * O infográfico **"Guia Fundamental de Sinais e Sistemas"** e os slides **"Fundamentos de Sinais e Sistemas"**.
+
+#### 5. Como um especialista no assunto teria respondido?
+
+> "Ao alocar um buffer de apenas 1000 posições, o desenvolvedor causará um **truncamento de memória da convolução**. 
+> 
+> Matematicamente, a convolução entre um bloco de áudio com $(N_1 = 1000$) amostras e uma resposta ao impulso com $(N_2 = 500$) amostras produz uma saída de tamanho $(N_{out} = N_1 + N_2 - 1 = 1499$) amostras. 
+> 
+> As 499 amostras que ultrapassam o tamanho do bloco de entrada representam a **memória e o tempo de decaimento do sistema** (o eco da catedral). Limitar o buffer a 1000 posições corta essa cauda de reverberação, provocando descontinuidade no áudio e estalos numéricos perceptíveis."
+
 ---
 
 ### 4. Nível Especialista: A Falsa Promessa do Filtro Digital Anti-Aliasing
@@ -359,6 +377,42 @@ Você não compreendeu como o **corte temporal (janelamento) altera a própria c
 * **A Regra de Bolso que Falha:** *"Filtros digitais modernos em software conseguem limpar qualquer ruído de alta frequência após a amostragem."*
 * **O Desafio de Raciocínio:** Por que a estratégia do engenheiro falhará inevitavelmente? Por que um filtro analógico *anti-aliasing* antes do conversor A/D é um requisito físico insubstituível?
 * **O Conceito por Trás da Resposta:** Ao amostrar o sinal a $(2,1\text{ kHz}$), a frequência limite de Nyquist é $(f_s / 2 = 1,05\text{ kHz}$). O ruído analógico de $(5\text{ kHz}$) sofre o fenômeno de **aliasing (sobreposição espectral)**, rebatendo para dentro da banda base útil na frequência aparente de $(5 - 2 \times 2,1 = 0,8\text{ kHz}$) ($(800\text{ Hz}$)). Uma vez amostrado, o ruído rebatido torna-se **indistinguível** do sinal útil. Nenhum filtro digital consegue removê-lo *post-facto*. A filtragem passa-baixas analógica antes da amostragem A/D é indispensável para limitar o espectro original.
+
+Minha resposta: ""
+
+
+Aqui está a avaliação detalhada da pergunta sobre **"A Falsa Promessa do Filtro Digital Anti-Aliasing"**:
+
+#### 1. Qual parte da sua resposta está correta?
+A atitude de **identificar a lacuna e pausar para construir o conceito** do zero em vez de chutar. Em engenharia de sistemas, assumir desconhecimento é o primeiro passo para não cometer um erro grave de projeto de hardware.
+
+#### 2. Qual parte é superficial?
+Como não houve resposta técnica, não há uma superficialidade verbal. No entanto, a lacuna existente é não perceber a **hierarquia temporal e física** do processamento de sinais: a diferença entre o que acontece no mundo analógico (antes da amostragem) e no mundo digital (depois da amostragem).
+
+#### 3. Qual conceito você não compreendeu completamente?
+O conceito-chave que faltava é o **Mecanismo Irreversível do *Aliasing* (Sobreposição Espectral)**:
+
+1. **A Amostragem e o Limite de Nyquist:** Para amostrar um sinal contínuo sem perda de informação, a taxa de amostragem $(f_s$) deve ser pelo menos duas vezes maior que a maior frequência $(f_M$) do sinal. A metade da taxa de amostragem ($(f_s/2$)) é chamada de Frequência de Nyquist.
+2. **O Fenômeno do Rebatimento (*Aliasing*):** Se o sinal de entrada contiver frequências acima de $(f_s/2$), o processo de amostragem faz com que essas frequências "rebatam" para dentro da banda útil. Por exemplo, se amostrarmos a $(f_s = 2,1\text{ kHz}$) (limite de Nyquist em $(1,05\text{ kHz}$)), um ruído externo de $(5\text{ kHz}$) é rebatido e reaparece na frequência aparente de $(800\text{ Hz}$).
+3. **Por que a promessa é "FALSA"?** A falsa promessa é achar que um **filtro digital em software** (DSP) pode limpar esse ruído após a amostragem. Uma vez rebatido para $(800\text{ Hz}$), o ruído de $(5\text{ kHz}$) torna-se **matematicamente idêntico e indistinguível** do sinal original útil que já existia em $(800\text{ Hz}$). Nenhum software consegue separá-los depois que o conversor A/D já amostrou.
+4. **A Solução Física Real:** O filtro anti-aliasing **deve obrigatoriamente ser um filtro passa-baixas ANALÓGICO** colocado no circuito eletrônico **ANTES do Conversor A/D**.
+
+#### 4. Quais fontes específicas você deveria consultar?
+* **ELT 576.pdf:**
+  * **Seção 4 (*Amostragem e Análise Espectral*)**, páginas 46–48: Figuras 5.10 e 5.15 mostrando a sobreposição espectral (*aliasing*).
+  * **Seção 5 (*Condicionamento Analógico de Entrada*)**, páginas 48–50: O diagrama em blocos que mostra explicitamente o *Filtro Anti-Aliasing* analógico antecedendo o conversor A/D.
+* **Apostila ELT 576 Atualizada.pdf:**
+  * **Capítulo 5.3 (*Aplicações do Pré-Processamento*)**, páginas 47–48 e 61–63.
+* **Artefatos do Studio:**
+  * O vídeo **"O Que Separa o Sinal do Ruído?"** e o infográfico **"Sinais Contínuos vs. Sinais Discretos"**.
+
+#### 5. Como um especialista no assunto teria respondido?
+
+> "A promessa de usar um filtro digital para eliminar o aliasing é 'falsa' porque **nenhum algoritmo em software consegue reverter o aliasing após a conversão A/D ter ocorrido**.
+> 
+> Se um sinal analógico contiver componentes de frequência superiores à metade da taxa de amostragem ($(f_s/2$)), o processo de amostragem fará com que essas frequências altas sofram rebatimento espectral (*aliasing*), reaparecendo dentro da faixa de frequências baixas úteis. 
+> 
+> Como o ruído rebatido se soma e se mistura ao sinal útil de forma indistinguível dentro do ambiente digital, o filtro anti-aliasing **deve ser obrigatoriamente um filtro passa-baixas ANALÓGICO**, implementado em circuito eletrônico no condicionamento de entrada **antes do conversor A/D**."
 
 ---
 
@@ -369,5 +423,152 @@ Você não compreendeu como o **corte temporal (janelamento) altera a própria c
 * **O Conceito por Trás da Resposta:** 
   1. **Efeito Gibbs e Resposta do Filtro:** Um corte retangular abrupto no domínio da frequência corresponde, no domínio do tempo, a uma resposta ao impulso do tipo $(\text{sinc}(t)$), que possui caudas infinitas e decaimento lento ($(1/t$)). Multiplicar por um retângulo na frequência provoca oscilações e sobressinais no tempo (**Fenômeno de Gibbs**) sempre que o sinal possui variações rápidas ou transições.
   2. **Convolução Circular vs. Linear:** A multiplicação direta de coeficientes discretos no domínio da frequência via FFT corresponde a uma **convolução circular** no tempo, e não à convolução linear. Sem o preenchimento correto com zeros (*zero-padding*), a cauda da resposta do filtro dá a volta (*wrap-around*) e corrompe as extremidades do sinal de saída.
+
+----
+
+
+#### 1. Qual parte da sua resposta está correta?
+A decisão de **interromper a resposta e buscar entender o conceito pela raiz** em vez de aplicar regras de bolso sem fundamentação matemática.
+
+### 2. Qual parte é superficial?
+Como você não apresentou uma resposta técnica, a lacuna existente ocultava a compreensão de dois fenômenos centrais: como a manipulação abrupta no domínio da frequência gera **oscilações indesejadas no domínio do tempo (Efeito Gibbs/Ringing)** e a diferença entre **convolução linear e convolução circular** ao operar com a Transformada Rápida de Fourier (FFT).
+
+
+#### 3. Qual conceito você não compreendeu completamente?
+A **Dualidade Tempo-Frequência** e as limitações físicas do **Filtro Passa-Baixas Ideal ("Parede de Tijolos" / *Brick-wall Filter*)**:
+
+1. **A Resposta ao Impulso do Filtro Ideal (Função Sinc):** Um filtro com corte vertical perfeito na frequência (ganho 1 na banda passante e ganho 0 na banda de rejeição) corresponde, no domínio do tempo, a uma resposta ao impulso do tipo **Sinc** ($(h(t) = \text{sinc}(t) = \frac{\sin(\pi t)}{\pi t}$)). 
+2. **Efeito Gibbs e *Ringing* no Tempo:** Como o pulso Sinc possui lóbulos secundários e caudas infinitas, convoluir um sinal com esse filtro provoca **oscilações artificiais (*ringings*) e sobressinais de aproximadamente 9%** ao redor de qualquer transição rápida ou pico do sinal no tempo (Fenômeno de Gibbs).
+3. **Não-Causalidade e Irrealizabilidade Física:** O pulso Sinc estende-se de $(-\infty$) a $(+\infty$) no tempo (possui valores para $(t < 0$)). Isso exige que o filtro responda *antes* da chegada do sinal de entrada, tornando o filtro ideal **não-causal e fisicamente impossível de implementar em tempo real**. Filtros reais exigem uma **banda de transição**.
+4. **Convolução Circular na FFT:** Zerar coeficientes de frequência diretamente na FFT aplica uma filtragem no domínio da frequência discreta, o que equivale a uma **convolução circular** no tempo. Sem o devido preenchimento com zeros (*zero-padding*), as extremidades do sinal filtrado sofrem distorção de rebatimento temporal (*wrap-around*).
+
+#### 4. Quais fontes específicas você deveria consultar?
+* **Apostila ELT 576 Atualizada.pdf:**
+  * **Capítulo 4.1 (*Decomposição de Sinais e Efeito Gibbs*)**, página 41: Discussão sobre o truncamento da série de Fourier gerando o Efeito Gibbs.
+  * **Capítulo 5.1.1 (*Filtro Passa-Baixa Ideal vs. Real*)**, páginas 49–50: Figura 5.4 destacando a diferença entre a curva preta (ideal) e a curva azul (real com banda de transição).
+  * **Capítulo 5.2 (*Estilos de Filtros: Butterworth, Chebyshev e Bessel*)**, páginas 53–57: Como os filtros práticos negociam a largura da banda de transição e a distorção temporal em vez de buscar um corte abrupto.
+* **ELT 576.pdf:**
+  * **Seção 1.2 (*Sinal Porta e a Função Sampling/Sinc*)**, páginas 41–42.
+* **Artefatos do Studio:**
+  * O infográfico **"Guia Fundamental de Sinais e Sistemas"** e a apresentação **"Fundamentos de Sinais, Sistemas e Filtragem Digital"**.
+
+#### 5. Como um especialista no assunto teria respondido?
+
+> "A estratégia de zerar abruptamente frequências no domínio do frequência (filtro passa-baixas ideal tipo 'parede de tijolos') provoca duas degradações severas no sinal:
+> 
+> 1. **Distorção no Tempo (*Ringing* e Efeito Gibbs):** Na dualidade de Fourier, uma janela retangular perfeita na frequência possui resposta ao impulso no tempo dada pela função $(\text{sinc}(t)$). As caudas infinitas e oscilatórias do pulso sinc geram ondulações artificiais (*ringings*) e sobressinais nas bordas das ondas no tempo (**Efeito Gibbs**). Além disso, como a função sinc existe para $(t < 0$), esse filtro é **não-causal e irrealizável em tempo real**.
+> 
+> 2. **Rebatimento Temporal (*Wrap-around*):** A multiplicação direta no espectro discreto da FFT realiza uma **convolução circular** no tempo. Se não for aplicado um *zero-padding* adequado no sinal antes da FFT, a cauda da resposta ao impulso invade o início do bloco de dados, corrompendo as bordas do sinal filtrado."
+
+
+---
+
+## Revisão
+
+Esta sessão foi projetada para consolidar os 5 pilares do seu caderno (*Amostragem*, *Classificação de Sinais*, *Sistemas LIT*, *Convolução* e *Domínio da Frequência/Filtragem*) e eliminar em definitivo as lacunas que identificamos nas questões de teste.
+
+---
+
+###  Cronograma da Sessão de Estudo (90 Minutos)
+
+```
+[00-20 min] Bloco 1: Sinais, Classificação e a Ponte da Amostragem
+[20-40 min] Bloco 2: A Abstração LIT e Testes de Propriedades de Sistemas
+[40-65 min] Bloco 3: Convolução, Resposta ao Impulso e Memória de Sistemas
+[65-80 min] Bloco 4: Domínio da Frequência, Aliasing e Filtragem Prática
+[80-90 min] Bloco 5: Encerramento e Consolidação Metacognitiva (10 min final)
+```
+
+---
+
+### Bloco 1 (20 min): Sinais, Classificação e a Ponte da Amostragem
+
+* **1. O que estudar:**
+  * Diferença formal e representação visual de sinais contínuos $(x(t)$) e discretos $(x[n]$).
+  * Classificação física e matemática entre **Sinais de Energia** (duração finita, integral de área limitada) e **Sinais de Potência** (duração infinita, taxa média finita).
+  * O papel da amostragem e a notação adequada (parênteses vs. colchetes).
+
+* **2. Pergunta que você deve responder ao final do bloco:**
+  > *"Por que uma gravação de áudio de 10 minutos de uma onda senoidal é classificada estritamente como um **sinal de energia** (e não de potência), e como o corte temporal (janelamento) altera a integração matemática desse sinal?"*
+
+* **3. Recurso para consultar em caso de dúvida:**
+  * **PDF:** *Apostila ELT 576 Atualizada.pdf* — Capítulo 1.1 e Capítulo 1.6 (páginas 19–20).
+  * **Artefato do Studio:** Infográfico **"Sinais Contínuos vs. Sinais Discretos"** e os Slides **"Fundamentos de Sinais e Sistemas"**.
+
+* **4. Resultado a alcançar:**
+  * Ser capaz de olhar para qualquer equação de sinal e identificar sem hesitar sua representação temporal (contínua/discreta) e aplicar corretamente as fórmulas de limiar de Energia ($(E_\infty$)) e Potência Média ($(P_\infty$)).
+
+---
+
+###  Bloco 2 (20 min): A Abstração dos Sistemas LIT e Testes de Propriedades
+
+* **1. O que estudar:**
+  * As quatro propriedades fundamentais de um sistema: **Linearidade** (Aditividade e Homogeneidade), **Invariância Temporal**, **Causalidade** e **Memória** (Estático vs. Dinâmico).
+  * A falha de linearidade em sistemas com deslocamento/polarização (*offset/bias* do tipo $(y(t) = ax(t) + b$)).
+
+* **2. Pergunta que você deve responder ao final do bloco:**
+  > *"Como provar formalmente que o sistema $(y(t) = 2x(t) + 3\text{ V}$) viola tanto o princípio da homogeneidade quanto o da aditividade, e por que a condição $(H\{0\} = 0$) é obrigatória para qualquer sistema estritamente linear?"*
+
+* **3. Recurso para consultar em caso de dúvida:**
+  * **PDF:** *Apostila ELT 576 Atualizada.pdf* — Capítulo 2.1 (*Sistemas Lineares*) e Exemplo 2.2.
+  * **Artefato do Studio:** App **"Sistemas Mapa"** e o App **"Sinais Quiz"**.
+
+* **4. Resultado a alcançar:**
+  * Executar com fluidez o teste numérico de aditividade e homogeneidade em qualquer equação de sistema sem confundir equações de retas geométricas com a definição de linearidade de sistemas.
+
+---
+
+###  Bloco 3 (25 min): Convolução, Resposta ao Impulso e Memória
+
+* **1. O que estudar:**
+  * A decomposição por impulsos e o significado físico da resposta ao impulso unitário $(h[n]$) ou $(h(t)$).
+  * Os 4 passos do mecanismo da convolução: **Inverter, Deslocar, Multiplicar e Somar/Integrar**.
+  * Dimensionamento do vetor de saída e o conceito de espalhamento temporal/memória do sistema ($(N_{out} = N_1 + N_2 - 1$)).
+
+* **2. Pergunta que você deve responder ao final do bloco:**
+  > *"Se eu fizer a convolução entre um trecho de áudio de 1000 amostras e a resposta ao impulso de uma sala com 500 amostras, qual deve ser o tamanho exato do buffer de saída, e o que aconteceria com o som se eu limitasse o buffer a apenas 1000 amostras?"*
+
+* **3. Recurso para consultar em caso de dúvida:**
+  * **PDF:** *ELT 576.pdf* — Seção 3.1.2 (*Soma de Convolução*) e Exemplo 3.1 da *Apostila ELT 576*.
+  * **Artefato do Studio:** Infográfico **"Guia Fundamental de Sinais e Sistemas"** e o App **"Sinais e Sistemas Flashcards"**.
+
+* **4. Resultado a alcançar:**
+  * Escrever o somatório/integral de convolução explicitando corretamente a inversão da variável fantasma ($(k$) ou $(\tau$)) e dimensionar perfeitamente os vetores de saída de filtros finitos (FIR).
+
+---
+
+###  Bloco 4 (15 min): Domínio da Frequência, Aliasing e Filtragem Prática
+
+* **1. O que estudar:**
+  * A dualidade tempo-frequência e a conversão de convolução no tempo para multiplicação na frequência (Teorema da Convolução).
+  * A necessidade física do **Filtro Anti-Aliasing Analógico** antes do conversor A/D.
+  * Os *trade-offs* de filtros reais (Butterworth vs. Chebyshev vs. Bessel) e os riscos do filtro ideal ("parede de tijolos").
+
+* **2. Pergunta que você deve responder ao final do bloco:**
+  > *"Por que um filtro digital em software (DSP) é incapaz de remover o ruído de alta frequência após a conversão A/D se tiver ocorrido aliasing (rebatimento espectral), e por que um filtro tipo 'parede de tijolos' gera distorções (ringings) no tempo?"*
+
+* **3. Recurso para consultar em caso de dúvida:**
+  * **PDF:** *Apostila ELT 576 Atualizada.pdf* — Capítulo 4.1 (*Efeito Gibbs*), Capítulo 5.2 (*Estilos de Filtros*) e *ELT 576.pdf* (Seção 5 - Condicionamento Analógico).
+  * **Artefato do Studio:** Guia Guiado **"Fundamentos de Sinais, Sistemas e Filtragem Digital"** e o Vídeo **"O Que Separa o Sinal do Ruído?"**.
+
+* **4. Resultado a alcançar:**
+  * Saber desenhar a cadeia completa de aquisição de sinais (Sinal Analógico $(\to$) Filtro Anti-Aliasing Analógico $(\to$) A/D $(\to$) Processamento Digital / Filtro DSP $(\to$) Saída) e explicar o papel de cada estágio.
+
+---
+
+###  Bloco 5 (Últimos 10 Minutos): Conclusão e Consolidação Metacognitiva
+
+Para garantir que o conhecimento saia da memória de curto prazo e seja fixado com sucesso, siga estritamente estes 3 passos nos 10 minutos finais:
+
+1. **[Minutos 80–84] Teste Flash Sem Consultas:**
+   * Abra o aplicativo do Studio **"Sinais Quiz"** ou **"Sinais e Sistemas Flashcards"** e responda a 5 perguntas aleatórias de forma rápida. Note em qual conceito você hesitou por mais de 10 segundos.
+
+2. **[Minutos 84–87] A "Folha em Branco" (Feynman Technique):**
+   * Pegue um papel e desenhe de memória, sem olhar para as fontes, o mapa conceitual que conecta:
+     $[\text{Sinal Entrada } x(t) \xrightarrow{\text{Amostragem A/D}} x[n] \xrightarrow{\text{Convolução com } h[n]} y[n] \xrightarrow{\text{FFT}} Y(j\omega)$]
+   * Anote ao lado do desenho a frase-chave que define por que o filtro anti-aliasing precisa vir *antes* do A/D.
+
+3. **[Minutos 87–90] Registro de Lacunas do Dia:**
+   * Escreva uma única frase com a sua principal conquista conceitual do dia (ex.: *"Hoje entendi por que offset quebra a homogeneidade e por que a convolução aumenta o tamanho do vetor de saída"*).
 
 ---
