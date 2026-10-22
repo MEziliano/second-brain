@@ -242,3 +242,52 @@ Não saber explicar por que filtros digitais em software (como no cancelamento d
 * **Apostila / PDF:** Capítulo 4.3 (*"Propriedades da Transformada de Fourier"* — Tabela 4.1.1) da *Apostila ELT 576 Atualizada.pdf* e Capítulo 4 de *ELT 576.pdf*.
 
 ## Questões
+
+Aqui estão **5 perguntas conceituais de alto nível focadas especificamente em Convolução**, ordenadas da mais simples à mais desafiadora. 
+
+Elas foram desenhadas para identificar se alguém compreende o **mecanismo físico da memória dos sistemas, a matemática do deslocamento temporal e a aplicação prática em áudio, visão computacional e processamento digital**, ou se apenas decorou a fórmula do somatório.
+
+---
+
+### 1. Nível Nivelamento: A Armadilha da Multiplicação Ponto a Ponto vs. Memória do Sistema
+
+* **O Cenário:** Um estudante de programação está criando um efeito de áudio em Python. Ele possui o sinal de voz de entrada $(x[n]$) (um arquivo de 2 segundos) e a resposta ao impulso $(h[n]$) de uma sala de concerto (que dura 1 segundo). Para aplicar o efeito da sala, ele decide fazer a operação vetorizada simples `y = x * h` (multiplicando elemento a elemento os dois vetores no tempo).
+* **A Regra de Bolso que Falha:** *"Processar ou filtrar um sinal por um sistema é simplesmente multiplicar a curva de entrada pela resposta do sistema no tempo."*
+* **O Desafio de Raciocínio:** Por que essa multiplicação elemento a elemento falha miseravelmente em gerar o efeito de reverberação? O que a multiplicação ponto a ponto ignora em relação ao passado e à memória do sistema? Como o termo de inversão e deslocamento temporal $(h[n-k]$) na fórmula da convolução resolve esse problema?
+* **O Conceito por Trás da Resposta:** A multiplicação ponto a ponto $(x[n] \cdot h[n]$) pressupõe que o sistema é **estático (sem memória)**, onde a saída depende exclusivamente do valor exato da entrada no mesmo instante $(n$). No entanto, um efeito de eco ou sala é um sistema **dinâmico (com memória)**: a saída no presente $(y[n]$) deve acumular a energia de todas as amostras de voz do passado $(x[k]$), ponderadas pelo decaimento do eco $(h[n-k]$). Multiplicar elemento a elemento corta o efeito após 1 segundo e impede o "espalhamento" temporal do som.
+
+---
+
+### 2. Nível Intermediário: O Mistério da Comutatividade na Prática (Entrada vs. Sistema)
+
+* **O Cenário:** Um engenheiro de DSP está projetando um sistema de transmissão de áudio ao vivo. Ele possui um sinal de entrada de voz contínua $(x[n]$) (um show de 1 hora, com $(N_1 = 280$) milhões de amostras) e um filtro de equalização de áudio muito curto $(h[n]$) ($(N_2 = 64$) amostras).
+* **A Regra de Bolso que Falha:** *"Como a convolução é estritamente comutativa ($(x * h = h * x$)), é indiferente inverter e deslizar o sinal de entrada $(x$) sobre o filtro $(h$) ou inverter e deslizar o filtro $(h$) sobre o sinal de entrada $(x$)."*
+* **O Desafio de Raciocínio:** Embora a igualdade matemática $(\sum x[k]h[n-k] = \sum h[k]x[n-k]$) seja perfeita no papel, por que tentar inverter no tempo e deslizar o sinal de entrada $(x[n]$) (o show de 1 hora) sobre o filtro $(h[n]$) é fisicamente e computacionalmente inviável em tempo real? O que a inversão temporal representa quando aplicada ao filtro curto versus quando aplicada ao sinal de entrada?
+* **O Conceito por Trás da Resposta:** Em sistemas de tempo real (*streaming*), o sinal de entrada $(x[n]$) é um fluxo contínuo e aberto que vem do futuro. Tentar realizar a inversão temporal de $(x[n]$) exigiria armazenar **todo o show de 1 hora antes de iniciar o processamento**, o que violaria a causalidade e destruiria o processamento em tempo real. Na prática, a comutatividade é explorada mantendo o sinal de entrada $(x[k]$) fixo num buffer de histórico e **invertendo e deslizando apenas o filtro curto $(h[n-k]$)** ($(64$) coeficientes), exigindo um atraso mínimo de poucas amostras.
+
+---
+
+### 3. Nível Avançado: O Transiente e o Tamanho do Buffer na Convolução Discreta
+
+* **O Cenário:** Em um sistema de radar de monitoramento aéreo, um pulso eletromagnético $(x[n]$) de $(N_1 = 200$) amostras é emitido. O sinal refletido que retorna é processado por um filtro casado cuja resposta ao impulso $(h[n]$) possui $(N_2 = 80$) amostras. O desenvolvedor aloca um buffer de saída $(y[n]$) com exatamente $(200$) posições e percebe que alvos distantes (cujas reflexões chegam no final da janela) simplesmente desaparecem ou têm seu pico de detecção distorcido.
+* **A Regra de Bolso que Falha:** *"A saída de um sistema filtrado deve ser guardada num vetor do mesmo tamanho do sinal de entrada que foi enviado."*
+* **O Desafio de Raciocínio:** Qual deve ser o tamanho exato do vetor de saída $(y[n]$) para conter toda a resposta do radar sem nenhum corte? O que representam fisicamente as amostras adicionais $(N_{out} - N_1$), e o que ocorre durante a fase de "entrada" (transiente de subida) e "saída" (transiente de descida) na sobreposição entre os sinais?
+* **O Conceito por Trás da Resposta:** A convolução entre dois vetores de durações finitas $(N_1$) e $(N_2$) resulta em uma saída de tamanho **$(N_{out} = N_1 + N_2 - 1$)** amostras. No exemplo, o vetor precisa ter $(200 + 80 - 1 = 279$) posições. As $(79$) amostras adicionais representam a **cauda de decaimento e a memória do filtro**. Ao alocar apenas 200 posições, o algoritmo descarta o transiente de descida, cortando exatamente o intervalo onde os ecos de alvos mais distantes estariam se acumulando.
+
+---
+
+### 4. Nível Especialista: Inversão Espacial em Redes Neurais Convolucionais (CNNs)
+
+* **O Cenário:** Um pesquisador de Inteligência Artificial está analisando o código interno da camada de convolução 2D de uma biblioteca de Deep Learning (como PyTorch ou TensorFlow) aplicada ao diagnóstico de exames de Raio-X. Ao examinar a equação executada pela GPU, ele descobre que a biblioteca calcula $(y[i,j] = \sum \sum x[i+m, j+n] \cdot w[m,n]$), **sem realizar a inversão espacial (espelhamento) da matriz de pesos $(w$) antes de deslizar**.
+* **A Regra de Bolso que Falha:** *"As camadas das Redes Neurais Convolucionais (CNNs) executam exatamente a operação formal de convolução da teoria de Sinais e Sistemas."*
+* **O Desafio de Raciocínio:** Matematicamente, a operação executada pela biblioteca de IA é uma **Correlação Cruzada**, e não uma Convolução estrita. Por que a ausência da inversão espacial no filtro $(w$) NÃO prejudica o aprendizado da rede neural? Em que situação de engenharia de visão computacional tradicional essa falta de inversão causaria uma falha grave?
+* **O Conceito por Trás da Resposta:** Na teoria clássica, a inversão temporal/espacial $(h[-k]$) é indispensável para preservar propriedades matematicamente rígidas (como a comutatividade e a causalidade de filtros projetados manualmente). Nas CNNs, os coeficientes do kernel $(w$) **não são projetados por humanos, mas aprendidos do zero via algoritmo de backpropagation**. Se o filtro precisasse ser invertido, a rede neural simplesmente aprenderia os pesos já na orientação invertida! Economiza-se ciclos de GPU eliminando a inversão. Porém, se um engenheiro carregar um filtro de borda clássico (como o filtro Sobel) em uma rotina de correlação sem inverter o kernel previamente, as direções dos gradientes e detecções de borda sairão espelhadas e erradas.
+
+---
+
+### 5. Nível Mestre: A Armadilha da Convolução via FFT (Linear vs. Circular)
+
+* **O Cenário:** Um engenheiro de som deseja aplicar um filtro de reverberação longo ($(h[n]$) com $(N_2 = 10.000$) amostras) em uma faixa de música ($(x[n]$) com $(N_1 = 40.000$) amostras). Para acelerar o cálculo, ele decide usar a Transformada Rápida de Fourier (FFT): calcula `X = FFT(x, 40000)`, `H = FFT(h, 40000)`, multiplica `Y = X * H` ponto a ponto na frequência e aplica a transformada inversa `y = IFFT(Y)`. Ao escutar o resultado, ele observa um fenômeno bizarro: o eco do final da música "vaza" e reaparece sobreposto logo nos primeiros segundos da gravação!
+* **A Regra de Bolso que Falha:** *"A multiplicação direta das Transformadas de Fourier de dois sinais no domínio da frequência calcula a convolução perfeita entre eles no tempo."*
+* **O Desafio de Raciocínio:** Qual é a diferença fundamental entre a Convolução Linear e a Convolução Circular realizada pela FFT? Por que o final do áudio reapareceu no início da música (*aliasing temporal / wrap-around*)? Como corrigir o algoritmo usando a técnica de *zero-padding*?
+* **O Conceito por Trás da Resposta:** A multiplicação direta de transformadas discretas na frequência (FFT de tamanho $(N$)) corresponde à **Convolução Circular** no tempo, onde os sinais são tratados como se fossem periódicos de período $(N$). Como o tamanho real exigido pela convolução linear é $(N_1 + N_2 - 1 = 40.000 + 10.000 - 1 = 49.999$) amostras, ao escolher uma FFT de apenas $(40.000$) pontos, as $(9.999$) amostras da cauda de reverberação que não couberam deram a volta (*wrap-around*) e se somaram ao início do sinal. Para obter a convolução linear exata via FFT, ambos os vetores de entrada devem receber preenchimento com zeros (*zero-padding*) até que seus tamanhos atinjam **$(N_{FFT} \ge N_1 + N_2 - 1$)** (no mínimo $(49.999$) pontos) antes de calcular as FFTs.
