@@ -7,8 +7,6 @@ A ideia é construir contexto, identificar o que é importante, testar seus conh
 
 Você pode usar essas sugestões com qualquer assunto.
 
-
-
 ### Como Usar Estas Instruções
 
 1. Crie um caderno no NotebookLM sobre o tópico que você deseja aprender.
