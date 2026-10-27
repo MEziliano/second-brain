@@ -84,13 +84,9 @@ You need to master what you need to explain clearly from scratch.
 For each idea, tell me:
 
 1. What do I really need to understand?
-
 2. What is often confused or poorly explained?
-
 3. What simple example could I use? Or what simple analogy could I use?
-
 4. What would indicate that I still don't fully understand?
-
 5. What resources in the notebook should I review to deepen my understanding of the subject?
 
 Prioritize what is most important to understand, master, and teach the topic clearly, practically, and coherently.
