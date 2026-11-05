@@ -47,7 +47,6 @@ Before we delve into technical details, complexity, or depth, I need to build a 
 
 # 2. Essential Subject Concepts
 
-Act as my Socratic Expert Tutor and Senior Examiner. From now on, we will study the following subject: [TOPIC]
 Based on ALL the sources in this notebook—articles, academic papers, videos, guides, PDFs, and materials on [TOPIC]—identify the 5 essential concepts to understand about [TOPIC].
 
 I don't want a summary of each source. I want the **MAIN IDEAS** that underpin the entire topic: the principles that explain how [TOPIC] really works, which an expert would consider obvious, but which a beginner would normally not be able to connect.
@@ -60,13 +59,11 @@ For each main concept:
 4. Indicate which other concepts present it relates to. Relates.
 5. Explain it in the following way:
 Feynman Explanation (Level Progression):
-Basic: Explain as if you were telling a 12-year-old child, without jargon, necessarily using a real-world analogy.
-Intermediate: Introduce the correct technical terms and explain the standard operating mechanism.
-Advanced: Detail the nuances, trade-offs (costs, complexity, scalability) and how this applies to real-world systems or contexts in the field of study.
-Expert/Master: Point out edge cases, hidden limitations, pitfalls of practical application, or current debates in the literature on this concept.
-
+    I - Basic: Explain as if you were telling a 12-year-old child, without jargon, necessarily using a real-world analogy.
+    II - Intermediate: Introduce the correct technical terms and explain the standard operating mechanism.
+    III-Advanced: Detail the nuances, trade-offs (costs, complexity, scalability) and how this applies to real-world systems or contexts in the field of study.
+    IV - Expert/Master: Point out edge cases, hidden limitations, pitfalls of practical application, or current debates in the literature on this concept.
 6. Point out the typical mistake someone makes when they don't fully understand this concept.
-
 7. Cite at least two sources from your notebook that support you.
 Prioritize concepts that appear repeatedly in various sources and that help build a comprehensive mind map of the topic.
 

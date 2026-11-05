@@ -124,15 +124,10 @@ Minha resposta:
 Diga-me:
 
 1. Qual parte da minha resposta está correta?
-
 2. Qual parte é superficial?
-
 3. Qual conceito eu não compreendi completamente?
-
 4. Quais fontes específicas eu deveria consultar?
-
 5. Como um especialista no assunto teria respondido?
-
 6. Me faça uma nova pergunta de follow-up para testar se corrigi minha lacuna.
 ``
 
@@ -145,13 +140,9 @@ Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, cr
 Quero que você divida a sessão em blocos de tempo e inclua:
 
 1. O que devo estudar em cada bloco.
-
 2. Que pergunta devo responder.
-
 3. Qual recurso devo consultar se tiver alguma dúvida.
-
 4. Qual resultado devo alcançar ao final de cada bloco.
-
 5. O que devo fazer nos últimos 10 minutos para concluir a sessão de forma eficaz.
 
 ---
@@ -165,13 +156,9 @@ Usando tudo o que abordamos nesta conversa e todos os recursos deste caderno, cr
 Quero que ele inclua:
 
 1. Uma folha de estudo de uma página com as ideias principais.
-
 2. Uma tabela com erros comuns e como corrigi-los.
-
 3. Dez questões de revisão ordenadas por dificuldade.
-
 4. Um plano de revisão para os próximos 7 dias.
-
 5. Fontes específicas que devo consultar se tiver dúvidas.
 
 Torne-o prático, claro e projetado para revisão sem precisar reler todo o caderno do zero.
