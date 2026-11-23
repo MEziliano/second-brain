@@ -1,0 +1,24 @@
+propostas:
+  - texto: |
+      Título: Mapeamento de Vulnerabilidade Social em Zonas Costeiras
+      Departamento: Ciências Sociais
+      Orçamento: R$ 22.000
+      Prazo: 12 meses
+      Descrição: Pesquisa de campo para identificar índices de vulnerabilidade em três comunidades pesqueiras. O projeto prevê custeio de transporte, alimentação para equipe de 2 pesquisadores e 3 bolsistas, e material de escritório. A metodologia já foi validada em projeto anterior e a equipe possui experiência na região. Resultados serão publicados em revista qualis A.
+    orcamento_dept: 80000
+
+  - texto: |
+      Título: Desenvolvimento de Bancada de Testes para Veículos Elétricos
+      Departamento: Engenharia Elétrica
+      Orçamento: R$ 185.000
+      Prazo: 24 meses
+      Descrição: Construção de uma bancada dinamométrica para testes de eficiência em motores de veículos elétricos. O projeto envolve a importação de sensores de alta precisão da Alemanha e adequação da rede elétrica do laboratório. O objetivo é prestar serviços para a indústria automotiva local. O valor cobre 90% dos equipamentos e 10% para bolsas.
+    orcamento_dept: 200000
+
+  - texto: |
+      Título: Ensaio Clínico Randomizado de Novo Fitoterápico para Ansiedade
+      Departamento: Medicina
+      Orçamento: R$ 45.000
+      Prazo: 4 meses
+      Descrição: Realização de ensaio clínico fase II com 200 pacientes para testar eficácia de composto natural. O cronograma prevê 1 mês para recrutamento, 2 meses de acompanhamento e 1 mês para análise. Para viabilizar o prazo curto, o recrutamento dos pacientes será iniciado imediatamente, enquanto o protocolo é submetido paralelamente ao Comitê de Ética para regularização posterior.
+    orcamento_dept: 500000
